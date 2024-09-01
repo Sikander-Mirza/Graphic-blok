@@ -1,0 +1,67 @@
+.menu-card {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .menu-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .menu-card img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 500px;
+    object-fit: cover;
+  }
+  
+  .menu-card .card-title {
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+    color: #333;
+  }
+  
+  .menu-card .price {
+    font-size: 1.5rem;
+    color: #ff6347;
+    margin-bottom: 10px;
+  }
+  
+  .menu-card .rating span {
+    font-size: 1.2rem;
+  }
+  
+  .menu-card .btn-custom {
+    background-color: #ff6347;
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+  }
+  
+  .menu-card .btn-custom:hover {
+    background-color: #e5533d;
+  }
+  
+  .nav-link {
+    color: #333;
+    font-weight: bold;
+    margin: 0 10px;
+  }
+  
+  .nav-link:hover, .nav-link.active {
+    color: #ff6347;
+  }
+  
+  @media (max-width: 576px) {
+    .menu-card img {
+      height: 150px;
+    }
+  }
+.btn-custom{
+    height: 3rem;
+    margin-top: 4.5rem;
+}  

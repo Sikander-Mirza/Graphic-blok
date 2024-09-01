@@ -1,0 +1,37 @@
+/* LogoDesignSection.css */
+
+
+  
+  .text-start {
+    text-align: left;
+  }
+  
+  .input-group input {
+    border-radius: 0;
+  }
+  
+  .btn-danger {
+    border-radius: 0;
+  }
+  
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+
+  
+
+
+  /* DesignCarouselSection.css */
+
+.design-card {
+    max-width: 150px;
+    text-align: center;
+  }
+  
+  .carousel-item {
+    transition: transform 0.5s ease-in-out;
+  }
+  
+ 
+  

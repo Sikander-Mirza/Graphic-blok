@@ -1,0 +1,113 @@
+/* NavigationBar.css */
+
+.red-strip {
+  width: 100%;
+  height: 40px; /* Adjust the height as needed */
+  background-color: #ed2d2a; /* Red color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 14px; /* Adjust font size as needed */
+  font-family: Arial, sans-serif; /* Adjust font family as needed */
+  position: fixed; /* Fix the red strip at the top */
+  top: 0;
+  left: 0;
+  z-index: 1030; /* Ensure it's on top of other content */
+}
+
+
+
+.contact-info {
+  display: flex;
+  gap: 20px; /* Space between the contact items */
+}
+
+.contact-link {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Space between icon and text */
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+.navbar-custom {
+  padding: 0.5rem 1rem;
+  height: 3rem;
+  position: fixed; /* Fix the navbar below the red strip */
+  top: 40px; /* Adjust to be below the red strip */
+  width: 100%; /* Make sure it spans the full width */
+  z-index: 1020; /* Slightly below the red strip */
+  background-color: #f8f9fa; /* Light background color */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Light shadow for depth */
+}
+
+.navbar-brand {
+  flex: 1;
+  font-weight: bold;
+  font-size: 1.5rem; /* Adjust size for brand */
+  color: #333; /* Dark text color for better contrast */
+}
+
+.navbar-logo {
+  height: 60px; /* Adjust the height as needed */
+  width: auto; /* Maintain aspect ratio */
+}
+
+.navbar-nav {
+  margin-left: auto; /* Align navigation items to the right */
+}
+
+.nav-link {
+  color: #555; /* Default text color */
+  font-size: 1rem; /* Adjust font size for nav links */
+  font-weight: 500; /* Slightly bold text */
+  transition: color 0.3s, transform 0.3s; /* Smooth transition for color and transform */
+}
+
+.nav-link:hover {
+  color: #007bff; /* Change text color on hover */
+  transform: translateY(-3px); /* Slightly lift the link on hover */
+}
+
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml,...'); /* Customize the toggle icon if desired */
+}
+/* Adjust navbar height and add background to hamburger menu */
+/* Adjust navbar height and add background to dropdown menu */
+@media (max-width: 992px) { /* Medium screens and smaller */
+  .navbar-custom {
+    height: 3.5rem; /* Slightly increase the height */
+  }
+
+
+
+  .navbar-collapse {
+    background-color: #f8f9fa; /* Add background color to the dropdown menu */
+  }
+
+  .nav-item .nav-link {
+    color: #333; /* Darker text color for better contrast */
+  }
+}
+
+@media (max-width: 768px) { /* Small screens */
+  .navbar-custom {
+    height: 4rem; /* Further increase the height */
+  }
+
+
+  .navbar-collapse {
+    background-color: #f8f9fa; /* Keep the background color for smaller screens */
+  }
+
+  .nav-item .nav-link {
+    color: #333; /* Keep the darker text color for better contrast */
+  }
+}
+

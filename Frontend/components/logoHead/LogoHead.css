@@ -1,0 +1,65 @@
+/* Styling for the title */
+.logohead-title {
+    font-size: 1.75rem; /* Adjust the size as needed */
+    color: #333; /* Adjust the color as needed */
+}
+
+/* Styling for the description paragraph */
+.logohead-description {
+    text-align: left; /* Align text to the left */
+    margin-bottom: 1.5rem; /* Space below the description */
+    color: #666; /* Adjust the color as needed */
+}
+
+/* Styling for the list container */
+.logohead-list {
+    padding-left: 1.5rem; /* Add padding to the left */
+}
+
+/* Styling for each list item */
+.logohead-item {
+    margin-bottom: 1.5rem; /* Space below each list item */
+}
+
+/* Styling for the text inside list items */
+.logohead-text {
+    margin-left: 1.5rem; /* Consistent left margin for text */
+    text-align: justify; /* Justify text alignment */
+    color: #444; /* Adjust the color as needed */
+}
+
+/* Styling for the image wrapper */
+.logohead-image-wrapper {
+    border: 2px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+}
+
+/* Styling for the image */
+.logohead-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 767.98px) {
+    .logohead-title, .logohead-description {
+        text-align: center; /* Center align text on small devices */
+    }
+    
+    .logohead-list {
+        padding-left: 1rem; /* Adjust padding for smaller screens */
+    }
+
+    .logohead-item {
+        padding-left: 0.5rem; /* Reduce padding on smaller screens */
+    }
+
+    .logohead-text {
+        margin-left: 0.5rem; /* Reduce margin on smaller screens */
+    }
+
+    .logohead-image-wrapper {
+        margin-top: 20px; /* Add margin above the image wrapper */
+    }
+}

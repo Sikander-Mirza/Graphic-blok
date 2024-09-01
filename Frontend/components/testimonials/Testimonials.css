@@ -1,0 +1,113 @@
+/* Testimonials.css */
+.testimonial-container {
+    max-width: 600px; /* Set the maximum width of the container */
+    margin: 0 auto; /* Center the container */
+    position: relative; /* Enable absolute positioning of child elements */
+    padding-bottom: 60px; /* Add padding at the bottom for the buttons */
+}
+
+.carousel-item p {
+    margin-bottom: 30px;
+    font-size: 1rem; /* Adjust font size if needed */
+}
+
+/* .carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+} */
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    bottom: -16rem; /* Position at the bottom of the container */
+    width: auto;
+}
+
+.carousel-control-prev {
+    left: 50%; /* Position the previous button in the middle */
+    transform: translateX(-120%); /* Move it left to avoid collision */
+}
+
+.carousel-control-next {
+    right: 50%; /* Position the next button in the middle */
+    transform: translateX(120%); /* Move it right to avoid collision */
+}
+
+@media (max-width: 992px) {
+    .testimonial-container {
+        padding-bottom: 50px; /* Adjust padding if needed */
+    }
+
+    .carousel-item p {
+        margin-bottom: 20px;
+        font-size: 0.9rem;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        bottom: -14rem; /* Adjust position for medium screens */
+    }
+
+    .carousel-control-prev {
+        transform: translateX(-100%); /* Adjust for medium screens */
+    }
+
+    .carousel-control-next {
+        transform: translateX(100%); /* Adjust for medium screens */
+    }
+}
+
+/* Small Screens */
+@media (max-width: 768px) {
+    .testimonial-container {
+        max-width: 90%; /* Adjust max width for small screens */
+        padding-bottom: 40px; /* Adjust padding if needed */
+    }
+
+    .carousel-item p {
+        margin-bottom: 15px;
+        font-size: 0.8rem;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        bottom: -10rem; /* Adjust position for small screens */
+    }
+
+    .carousel-control-prev {
+        transform: translateX(-80%); /* Adjust for small screens */
+    }
+
+    .carousel-control-next {
+        transform: translateX(80%); /* Adjust for small screens */
+    }
+}
+
+/* Extra Small Screens */
+@media (max-width: 576px) {
+    .testimonial-container {
+        max-width: 100%; /* Full width for extra small screens */
+        padding-bottom: 30px; /* Adjust padding if needed */
+    }
+
+    .carousel-item p {
+        margin-bottom: 10px;
+        font-size: 0.75rem;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        bottom: -8rem; /* Adjust position for extra small screens */
+    }
+
+    .carousel-control-prev {
+        transform: translateX(-60%); /* Adjust for extra small screens */
+    }
+
+    .carousel-control-next {
+        transform: translateX(60%); /* Adjust for extra small screens */
+    }
+}

@@ -1,0 +1,54 @@
+/* Styling the badge at the top */
+.badge-pill {
+    background-color: #f0ad4e;
+    font-size: 1rem;
+  }
+  
+  /* Image element styling */
+  .image-element img {
+    max-width: 80px; /* Adjust size according to design */
+  }
+  
+  .image-element h5 {
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  
+  .image-element p {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .row.d-flex.align-items-center {
+      flex-direction: column;  /* Stacks the text and image vertically */
+    }
+  
+    .col-md-8 {
+      text-align: center;  /* Centers the text content */
+      margin-top: 2rem;  /* Adds spacing between sections */
+    }
+  
+    .col-md-4 {
+      margin-left: 0;  /* Removes the margin on smaller screens */
+      margin-top: 2rem;  /* Adds spacing between sections */
+    }
+  }
+  
+  /* Adjustments for small screens */
+  @media (max-width: 576px) {
+    h1 {
+      font-size: 1.75rem;  /* Reduces the font size of the heading */
+    }
+  
+    p {
+      font-size: 1rem;  /* Adjusts the paragraph text size */
+    }
+  
+    .btn-lg {
+      font-size: 1rem;  /* Adjusts the button text size */
+      padding: 0.75rem 1.5rem;  /* Adjusts the button padding */
+    }
+  }
+  

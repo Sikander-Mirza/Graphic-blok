@@ -1,0 +1,129 @@
+.new-services-heading {
+    color: #ff4d4d;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    width: 100%;
+}
+
+.new-services-heading::after {
+    content: "";
+    display: block;
+    width: 140px;
+    height: 4px;
+    background-color: #ff4d4d;
+    margin: 0.5rem auto 0;
+}
+
+.new-services-section {
+    background-color: #1f1f1f;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.new-services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem; /* Add gap between the cards for spacing */
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    height: 20rem;
+}
+
+.new-service-card {
+    background-color: #1f1f1f;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Keep other content aligned to the start (left) */
+    justify-content: center; /* Center content vertically */
+    height: 100%;
+    padding: 1rem;
+    position: relative;
+    border: 2px solid bisque; /* Subtle border for separation */
+    border-radius: 8px; /* Slight rounding of corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Vertical Line: Add to all except the first in the row */
+.new-service-card:not(:nth-child(4n))::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background-color: rgba(255, 255, 255, 0.993); /* More visible line */
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.new-service-card:hover {
+    transform: scale(1.05); /* Slightly reduced hover scale */
+    box-shadow: 0 12px 24px rgba(252, 2, 2, 0.822); /* Stronger shadow for a more noticeable effect */
+    z-index: 2;
+}
+
+.new-service-icon {
+    font-size: 1.5rem;
+    color: #ff4d4d;
+    margin-bottom: 1rem;
+    width: 100%;
+    text-align: center; /* Center the icon */
+}
+
+.new-service-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: center; /* Center the title text */
+    width: 100%; /* Ensure the title takes full width of the card */
+}
+
+.new-service-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.new-service-item {
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+
+.new-service-bullet {
+    margin-right: 0.5rem;
+    font-size: 1rem;
+    color: #ff4d4d;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .new-services-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+
+    .new-service-card:not(:nth-child(2n+1))::before {
+        display: none; /* Remove vertical line for mobile view */
+    }
+}
+
+@media (max-width: 768px) {
+    .new-services-grid {
+        grid-template-columns: 1fr; /* 1 column on small screens */
+    }
+
+    .new-service-card {
+        margin-bottom: 1rem;
+    }
+
+    .new-service-card::after, .new-service-card::before {
+        display: none; /* No lines in mobile view */
+    }
+}

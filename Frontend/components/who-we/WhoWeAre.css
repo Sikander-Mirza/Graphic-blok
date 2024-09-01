@@ -1,0 +1,76 @@
+.who-we {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    text-align: center; /* Center the text inside the div */
+    background-image: url('../../src/assets/team.jpg'); /* Path to your background image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    color: white; /* Set text color to white for contrast */
+    width: 100%; /* Ensure full width */
+    overflow: hidden; /* Prevent content overflow if any */
+    position: relative; /* Ensure proper positioning of child elements */
+}
+
+.content {
+    max-width: 900px; /* Limit the width of the content */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a dark overlay for readability */
+    padding: 2rem; /* Padding for inner content */
+    border-radius: 10px; /* Rounded corners */
+    position: relative; /* Ensure proper stacking context */
+    z-index: 1; /* Ensure content is above the background */
+}
+
+.who-we h1 {
+    font-size: 3rem; /* Adjust heading size */
+    margin: 0; /* Remove default margin */
+    color: #ff4d4d; /* Use the red color from your theme */
+}
+
+.who-we p {
+    font-size: 1.2rem; /* Adjust font size for readability */
+    color: #fff; /* White text color */
+    margin-top: 1rem; /* Space between the text and heading */
+    line-height: 1.6; /* Improve readability with line height */
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .who-we h1 {
+        font-size: 2.5rem; /* Smaller heading size for larger tablets */
+    }
+
+    .who-we p {
+        font-size: 1rem; /* Slightly smaller text */
+    }
+}
+
+@media (max-width: 768px) {
+    .who-we h1 {
+        font-size: 2rem; /* Smaller heading size for tablets and phones */
+    }
+
+    .who-we p {
+        font-size: 0.9rem; /* Smaller text for better readability on small screens */
+    }
+
+    .content {
+        padding: 1rem; /* Reduce padding on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .who-we h1 {
+        font-size: 1.5rem; /* Even smaller heading size for very small screens */
+    }
+
+    .who-we p {
+        font-size: 0.8rem; /* Even smaller text for very small screens */
+    }
+
+    .content {
+        padding: 0.5rem; /* Further reduce padding */
+    }
+}

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FaRegFileAlt, FaRegStar, FaRegFileImage, FaPalette, FaFacebookSquare, FaRegCopy, FaRegEdit, FaLifeRing, FaRegSmile } from 'react-icons/fa';
-import './Letterhead.css';
+import './LetterHead.css';
 
 // Define animation variants
 const featureVariants = {

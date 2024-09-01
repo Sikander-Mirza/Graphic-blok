@@ -16,7 +16,7 @@ const NavigationBar = () => {
   const handleSend = async (phoneNumber) => {
     const message = `This is a test message sent to ${phoneNumber} from the navigation bar.`;
     try {
-      await axios.post('http://localhost:8080/send-message', {
+      await axios.post('https://graphicblok-server.vercel.app/send-message', {
         phoneNumber,
         message,
       });

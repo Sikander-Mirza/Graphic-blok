@@ -49,7 +49,7 @@ const MenuCards = () => {
   const handleSend = async (phoneNumber) => {
     const message = `You have selected ${selectedItem.name}. Price: ${selectedItem.price}, Rating: ${selectedItem.rating} stars.`;
     try {
-      await axios.post('http://localhost:8080/api/send-message', {
+      await axios.post('https://graphicblok-server.vercel.app/api/send-message', {
         phoneNumber,
         message,
       });

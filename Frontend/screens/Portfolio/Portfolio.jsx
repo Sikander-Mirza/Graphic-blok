@@ -93,7 +93,7 @@ const PortfolioItem = ({ imgSrc, title, description, reverse, onConsultationClic
       const message = `Hello! I'm interested in the service: ${selectedItem.title}. Please contact me.`;
   
       try {
-        await axios.post('http://localhost:8080/send-message', {
+        await axios.post('https://graphicblok-server.vercel.app/send-message', {
           phoneNumber,
           message,
         });

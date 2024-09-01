@@ -4,7 +4,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import { FaEnvelope, FaPhone } from "react-icons/fa";
 import axios from 'axios';
 import PhoneNumberModal from '../Menucards/PhoneNumberModel'; // Import the PhoneNumberModal component
-import logo from "../../src/assets/logo.png";
+import logo from "../../src/assets/Logo.png";
 import './NavigationBar.css'; // Import custom CSS for styling
 
 const NavigationBar = () => {

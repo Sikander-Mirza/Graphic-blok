@@ -4,7 +4,7 @@ import { RiCodeSSlashLine } from "react-icons/ri";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom"; // Import Link
-import "./Cards.css";
+import "./cards.css";
 
 const services = [
   {

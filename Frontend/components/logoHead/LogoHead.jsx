@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './Logohead.css';  // Include the updated CSS file
+import './LogoHead.css';  // Include the updated CSS file
 
 const Logohead = () => {
     return (

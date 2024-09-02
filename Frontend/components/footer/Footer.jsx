@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { FaPhoneAlt, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { MdLocationOn, MdEmail } from 'react-icons/md';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate for routing
-import logo from "../../src/assets/Logo2.png";
+import Logo from "../../src/assets/Logo2.png";
 import Master from "../../src/assets/Master.png";
 import PayPal from "../../src/assets/Paypal.png";
 import UnionPay from "../../src/assets/UnionPay.png";
@@ -20,7 +20,7 @@ const Footer = () => {
                     {/* Logo and Description */}
                     <Col lg={4} md={6} sm={12} className="mb-4 mb-lg-0 text-center text-lg-start">
                         <div className="mt-5">
-                            <img src={logo} alt="Graphicblok Logo" className="mx-auto mx-lg-0 d-block" style={{ width: '60px', height: '70px' }} />
+                            <img src={Logo} alt="Graphicblok Logo" className="mx-auto mx-lg-0 d-block" style={{ width: '60px', height: '70px' }} />
                             <p className="mb-2 mt-3 logo-description w-75" style={{ fontSize: '14px', lineHeight: '1.4' }}>
                                 The Graphicblok team is a diverse and experienced group of professionals with over 5 years of expertise in both international and domestic markets. 
                             </p>

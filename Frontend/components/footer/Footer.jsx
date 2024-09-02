@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { FaPhoneAlt, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { MdLocationOn, MdEmail } from 'react-icons/md';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate for routing
-import Logo from "../../src/assets/Logo2.png";
+import Logo from "../../src/assets/FooterLogo.png";
 import Master from "../../src/assets/Master.png";
 import PayPal from "../../src/assets/Paypal.png";
 import UnionPay from "../../src/assets/UnionPay.png";

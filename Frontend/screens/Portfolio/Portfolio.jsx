@@ -124,7 +124,7 @@ const PortfolioItem = ({ imgSrc, title, description, reverse, onConsultationClic
         </Container>
         <Testimonials />
         <LogoSlider />
-        <Achievements />
+        {/* <Achievements /> */}
   
         <PhoneNumberModal
           show={showModal}

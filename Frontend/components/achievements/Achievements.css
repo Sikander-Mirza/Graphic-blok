@@ -6,18 +6,18 @@
 }
 
 .achievements-section h2 {
-    font-size: 3rem;
+    font-size: 3.5rem; /* Slightly larger font size for the heading */
     margin-bottom: 30px;
     font-weight: bold;
 }
 
 .achievements-section .row .col {
-    font-size: 2rem;
+    font-size: 10rem !important; /* Increased font size for numbers */
     margin-bottom: 20px;
 }
 
 .achievements-section .row .col p {
-    font-size: 1.2rem;
+    font-size: 11rem !important; /* Increased font size for labels */
     margin-top: 10px;
     letter-spacing: 1px;
 }
@@ -30,7 +30,7 @@
     }
     
     .achievements-section h2 {
-        font-size: 1.8rem;
+        font-size: 2rem; /* Increased slightly for mobile */
         margin-bottom: 20px; /* Adjust spacing */
     }
     
@@ -40,7 +40,7 @@
     }
     
     .achievements-section .row .col {
-        font-size: 1.3rem;
+        font-size: 2rem !important; /* Increased font size for mobile */
         display: flex;
         flex-direction: column; /* Ensure content is stacked within each column */
         align-items: center; /* Center align the content */
@@ -48,32 +48,32 @@
     }
     
     .achievements-section .row .col p {
-        font-size: 1rem;
+        font-size: 2rem !important; /* Increased font size for mobile */
         text-align: center; /* Center text */
     }
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
     .achievements-section h2 {
-        font-size: 2rem;
+        font-size: 2.5rem; /* Slightly larger for medium screens */
     }
     .achievements-section .row .col {
-        font-size: 1.5rem;
+        font-size: 3rem !important; /* Increased font size for medium screens */
     }
     .achievements-section .row .col p {
-        font-size: 1rem;
+        font-size: 3rem !important; /* Increased font size for medium screens */
     }
 }
 
 /* Adjustments for larger screens */
 @media (min-width: 769px) {
     .achievements-section h2 {
-        font-size: 2.3rem;
+        font-size: 3rem; /* Slightly larger for large screens */
     }
     .achievements-section .row .col {
-        font-size: 1.7rem;
+        font-size: 4rem !important; /* Increased font size for large screens */
     }
     .achievements-section .row .col p {
-        font-size: 1.05rem;
+        font-size: 4rem !important; /* Increased font size for large screens */
     }
 }

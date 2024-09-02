@@ -1,0 +1,16 @@
+/* Adjust the paragraph width and alignment for different screens */
+.logo-description {
+    max-width: 300px; /* Limit the paragraph width */
+    width: 100%; /* Ensure the paragraph takes full width within the column */
+    margin-left: auto; /* Center the paragraph horizontally */
+    margin-right: auto; /* Center the paragraph horizontally */
+    text-align: left; /* Align text to the left */
+}
+
+/* For small screens, center the text */
+@media (max-width: 576px) {
+    .logo-description {
+        text-align: center; /* Center align text */
+        max-width: 90%; /* Use a percentage for responsive behavior */
+    }
+}

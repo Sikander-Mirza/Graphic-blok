@@ -128,52 +128,54 @@
 /* Small screens (mobile phones, up to 767px) */
 @media (max-width: 767px) {
     .hexagon-container {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        height: auto;
-        margin-bottom: 20px;
-        padding: 0 20px;
+        display: flex; /* Make sure the container is flexible */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        width: 100%; /* Full width for the container */
+        height: auto; /* Adjust height automatically */
+        margin-bottom: 20px; /* Add space below each process block */
+        padding: 0 20px; /* Padding around the content */
     }
 
     .hexagon-border {
-        position: relative;
-        left: 0;
-        transform: none;
-        margin-bottom: 10px;
-        width: 80px;
-        height: 80px;
+        position: relative; /* Remove relative positioning */
+        left: 0; /* Reset left positioning */
+        transform: none; /* Remove any transform */
+        margin-bottom: 10px; /* Margin below the hexagon */
+        width: 80px; /* Width of the hexagon border */
+        height: 80px; /* Height of the hexagon border */
     }
 
     .hexagon {
-        width: 70px;
-        height: 70px;
+        width: 70px; /* Width of the inner hexagon */
+        height: 70px; /* Height of the inner hexagon */
     }
 
     .icon {
-        font-size: 30px;
+        font-size: 30px; /* Size of the icon inside the hexagon */
     }
 
     .text-content {
-        max-width: 100%;
-        padding: 0;
-        margin: 0;
-        text-align: center;
+        max-width: 100%; /* Allow full width for text */
+        padding: 0; /* Remove padding */
+        margin: 0; /* Remove margin */
+        text-align: center; /* Center align text */
     }
 
     .left .text-content,
     .right .text-content {
-        padding: 0;
-        margin: 0;
-        text-align: center;
+        padding: 0; /* Remove padding */
+        margin: 0; /* Remove margin */
+        text-align: center; /* Center align text */
     }
 
     .text-content h3 {
-        font-size: 1em;
-        margin-bottom: 5px;
+        font-size: 1em; /* Font size for headings */
+        margin-bottom: 5px; /* Space below heading */
     }
 
     .text-content p {
-        font-size: 0.9em;
+        font-size: 0.9em; /* Font size for paragraphs */
     }
 }
+

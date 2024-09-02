@@ -87,14 +87,39 @@
     .services-grid {
         grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
     }
+
+    .service-card {
+        align-items: center; /* Center content in card */
+    }
+
+    .service-icon {
+        text-align: center; /* Center the icon */
+    }
+
+    .service-title {
+        text-align: center; /* Center the title */
+    }
 }
 
+/* Responsive adjustments for centering icons and titles on small screens */
 @media (max-width: 768px) {
     .services-grid {
         grid-template-columns: 1fr; /* 1 column on small screens */
     }
-}
 
+    /* .service-card {
+        align-items: center; 
+        text-align: center; 
+    } */
+
+    .service-icon {
+        text-align: center; /* Center the icon */
+    }
+
+    .service-title {
+        text-align: center; /* Center the title */
+    }
+}
 .service-link {
     text-decoration: none;
     color: inherit;

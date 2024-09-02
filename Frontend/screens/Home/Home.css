@@ -17,35 +17,43 @@
   }
   
   
-  .head {
+  /* .head {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Center vertically */
-    height: 100%; /* Take up the full height of the container */
-    text-align: center; /* Center text horizontally */
-    color: white; /* Optional: Set text color to ensure visibility */
-    z-index: 1; /* Ensure content is above the video */
-    margin-top: 3.5rem; /* Margin for spacing, adjust as needed */
-    padding: 0 2rem; /* Add horizontal padding */
-  }
+    justify-content: center; 
+    height: 100%; 
+    text-align: center; 
+    color: white; 
+    margin-top: 3.5rem;
+    padding: 0 2rem; 
+  } */
   
+.head{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 9rem;
+  color: aliceblue;
+}
+
   .head h1 {
-    margin: 0; /* Remove default margins for h1 elements */
-    font-size: 6rem; /* Large font size for headings */
+    margin: 0; 
+    font-size: 6rem; 
   }
   
   .head h1:nth-child(2) {
-    color: red; /* Apply red color to the second h1 */
+    color: red; 
   }
   
   .head h1:nth-child(3) span {
-    color: red; /* Apply red color to 'PIXEL' text */
+    color: red; 
   }
   
   .head p {
-    font-size: 2rem; /* Font size for paragraphs */
-    margin-top: 2rem; /* Margin for spacing between paragraphs and headings */
+    font-size: 2rem; 
+    margin-top: 2rem; 
   }
   
   /* Responsive Styles */

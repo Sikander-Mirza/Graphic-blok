@@ -33,7 +33,6 @@
     max-width: 1100px;
     margin: 0 auto;
     position: relative;
-    height: 20rem;
 }
 
 .new-service-card {
@@ -108,7 +107,9 @@
     .new-services-grid {
         grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
     }
-
+    .new-service-card {
+        align-items: center; /* Center content in card */
+    }
     .new-service-card:not(:nth-child(2n+1))::before {
         display: none; /* Remove vertical line for mobile view */
     }

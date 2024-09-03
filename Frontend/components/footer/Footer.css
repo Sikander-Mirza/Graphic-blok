@@ -10,7 +10,6 @@
 /* For small screens, center the text */
 @media (max-width: 576px) {
     .logo-description {
-        text-align: center; /* Center align text */
-        max-width: 90%; /* Use a percentage for responsive behavior */
+       
     }
 }

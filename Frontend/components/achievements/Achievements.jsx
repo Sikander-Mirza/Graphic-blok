@@ -20,11 +20,11 @@ const Achievements = () => {
     return (
         <div className="achievements-section" ref={ref}>
             <h2 className="text-center">ACHIEVEMENTS</h2>
-            <div className="d-flex text-center container mt-5">
+            <div className="achievements-container mt-5">
                 {achievementsData.map((achievement, index) => (
-                    <div className="col" key={index}>
+                    <div className="achievement-item" key={index}>
                         {inView && <CountUp end={achievement.end} duration={3} />}+
-                        <p className="text-white">{achievement.label}</p>
+                        <p className='text-white'>{achievement.label}</p>
                     </div>
                 ))}
             </div>

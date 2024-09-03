@@ -4,20 +4,17 @@
     margin: 0 auto; /* Center the container */
     position: relative; /* Enable absolute positioning of child elements */
     padding-bottom: 60px; /* Add padding at the bottom for the buttons */
+    display: flex; /* Use flexbox for centering content */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center children vertically */
+    height: 400px; /* Set a fixed height for the container */
+    overflow: hidden; /* Hide overflow to maintain fixed height */
 }
 
 .carousel-item p {
     margin-bottom: 30px;
     font-size: 1rem; /* Adjust font size if needed */
 }
-
-/* .carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-} */
 
 .carousel-control-prev,
 .carousel-control-next {
@@ -39,6 +36,7 @@
 @media (max-width: 992px) {
     .testimonial-container {
         padding-bottom: 50px; /* Adjust padding if needed */
+        height: 350px; /* Adjust height for medium screens */
     }
 
     .carousel-item p {
@@ -65,6 +63,7 @@
     .testimonial-container {
         max-width: 90%; /* Adjust max width for small screens */
         padding-bottom: 40px; /* Adjust padding if needed */
+        height: 300px; /* Adjust height for small screens */
     }
 
     .carousel-item p {
@@ -91,6 +90,7 @@
     .testimonial-container {
         max-width: 100%; /* Full width for extra small screens */
         padding-bottom: 30px; /* Adjust padding if needed */
+        height: 250px; /* Adjust height for extra small screens */
     }
 
     .carousel-item p {

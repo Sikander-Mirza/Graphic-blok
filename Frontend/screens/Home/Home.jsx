@@ -21,7 +21,7 @@ const Home = () => {
                     <h1>CREATIVITY</h1>
                     <h1>IN</h1>
                     <h1>EVERY <span style={{ color: "red" }}>PIXEL</span></h1>
-                    <p className="text-white">Transforming Ideas Into Designs</p>
+                    <p>Transforming Ideas Into Designs</p>
                 </div>
             </div>
             <Cards/>

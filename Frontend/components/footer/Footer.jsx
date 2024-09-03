@@ -9,6 +9,7 @@ import PayPal from "../../src/assets/Paypal.png";
 import UnionPay from "../../src/assets/UnionPay.png";
 import Visa from "../../src/assets/Visa.png";
 import QR from "../../src/assets/QR.png";
+import linktree from "../../src/assets/linktree.png"
 
 const Footer = () => {
     const navigate = useNavigate(); // Initialize useNavigate
@@ -19,13 +20,14 @@ const Footer = () => {
                 <Row>
                     {/* Logo and Description */}
                     <Col lg={4} md={6} sm={12} className="mb-4 mb-lg-0 text-center text-lg-start">
-                        <div className="mt-5">
-                            <img src={Logo} alt="Graphicblok Logo" className="mx-auto mx-lg-0 d-block" style={{ width: '60px', height: '70px' }} />
-                            <p className="mb-2 mt-3 logo-description w-75" style={{ fontSize: '14px', lineHeight: '1.4' }}>
-                                The Graphicblok team is a diverse and experienced group of professionals with over 5 years of expertise in both international and domestic markets. 
-                            </p>
-                        </div>
-                    </Col>
+    <div className="mt-5 w-75 mx-auto mx-lg-0">
+        <img src={Logo} alt="Graphicblok Logo" className="d-block mx-auto mx-lg-0" style={{ width: '60px', height: '70px' }} />
+        <p className="mb-2 mt-3 logo-description" style={{ fontSize: '14px', lineHeight: '1.4' }}>
+            The Graphicblok team is a diverse and experienced group of professionals with over 5 years of expertise in both international and domestic markets.
+        </p>
+    </div>
+</Col>
+
 
                     {/* Expertise Section 1 */}
                     <Col lg={2} md={3} sm={6} className="text-center text-md-start mb-4 mb-lg-0">
@@ -90,13 +92,16 @@ const Footer = () => {
                 {/* Social Media and Payment Icons */}
                 <Row className="text-center">
                     <div className="d-flex justify-content-center justify-content-md-start align-items-start mt-2 mb-1">
-                        <img src={QR} alt="QR Code" style={{ width: '70px', height: '70px' }} />
+                        <img src={QR} alt="QR Code" style={{ width: '80px', height: '80px' }} />
                     </div>
                     <Col md={6} sm={12} className="mb-2 mt-3">
                         <div className="d-flex justify-content-center justify-content-md-start align-items-center">
                             <FaFacebook size={24} style={{ marginRight: '12px', color: '#007bff' }} />
                             <FaInstagram size={24} style={{ marginRight: '12px', color: '#C13584' }} />
                             <FaLinkedin size={24} style={{ color: '#0077b5' }} />
+                            <a href="https://igli.me/Graphicblok" target="_blank" rel="noopener noreferrer">
+  <img src={linktree} alt="" style={{marginRight: '12px', width: '80px', height: '50px'}} />
+</a>
                         </div>
                     </Col>
 

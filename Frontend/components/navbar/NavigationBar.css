@@ -2,25 +2,23 @@
 
 .red-strip {
   width: 100%;
-  height: 40px; /* Adjust the height as needed */
-  background-color: #ed2d2a; /* Red color */
+  height: 40px;
+  background-color: #ed2d2a;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: 14px; /* Adjust font size as needed */
-  font-family: Arial, sans-serif; /* Adjust font family as needed */
-  position: fixed; /* Fix the red strip at the top */
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 1030; /* Ensure it's on top of other content */
+  z-index: 1030;
 }
-
-
 
 .contact-info {
   display: flex;
-  gap: 20px; /* Space between the contact items */
+  gap: 20px;
 }
 
 .contact-link {
@@ -28,7 +26,7 @@
   text-decoration: none;
   display: flex;
   align-items: center;
-  gap: 5px; /* Space between icon and text */
+  gap: 5px;
 }
 
 .contact-link:hover {
@@ -37,77 +35,118 @@
 
 .navbar-custom {
   padding: 0.5rem 1rem;
-  height: 3rem;
-  position: fixed; /* Fix the navbar below the red strip */
-  top: 40px; /* Adjust to be below the red strip */
-  width: 100%; /* Make sure it spans the full width */
-  z-index: 1020; /* Slightly below the red strip */
-  background-color: #f8f9fa; /* Light background color */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Light shadow for depth */
+  height: 3.5rem;
+  position: fixed;
+  top: 40px;
+  width: 100%;
+  z-index: 1020;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navbar-brand {
-  flex: 1;
   font-weight: bold;
-  font-size: 1.5rem; /* Adjust size for brand */
-  color: #333; /* Dark text color for better contrast */
+  font-size: 1.75rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto;
 }
 
 .navbar-logo {
-  height: 75px; /* Adjust the height as needed */
-  width: auto; /* Maintain aspect ratio */
+  height: 70px;
+  width: auto;
 }
 
 .navbar-nav {
-  margin-left: auto; /* Align navigation items to the right */
+  margin-left: auto;
 }
 
 .nav-link {
-  color: #555; /* Default text color */
-  font-size: 1rem; /* Adjust font size for nav links */
-  font-weight: 500; /* Slightly bold text */
-  transition: color 0.3s, transform 0.3s; /* Smooth transition for color and transform */
+  color: #555;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s, transform 0.3s;
 }
 
 .nav-link:hover {
-  color: #007bff; /* Change text color on hover */
-  transform: translateY(-3px); /* Slightly lift the link on hover */
+  color: #007bff;
+  transform: translateY(-3px);
 }
 
+.navbar-toggler {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1040; /* Ensure it stays above the navbar */
+}
 
 .navbar-toggler-icon {
   background-image: url('data:image/svg+xml,...'); /* Customize the toggle icon if desired */
 }
-/* Adjust navbar height and add background to hamburger menu */
-/* Adjust navbar height and add background to dropdown menu */
-@media (max-width: 992px) { /* Medium screens and smaller */
+
+/* Medium screens */
+@media (max-width: 992px) {
   .navbar-custom {
-    height: 3.5rem; /* Slightly increase the height */
+    height: 3.75rem;
   }
 
-
-
-  .navbar-collapse {
-    background-color: #f8f9fa; /* Add background color to the dropdown menu */
-  }
-
-  .nav-item .nav-link {
-    color: #333; /* Darker text color for better contrast */
+  .navbar-logo {
+    height: 60px;
   }
 }
 
-@media (max-width: 768px) { /* Small screens */
+/* Small screens */
+@media (max-width: 768px) {
   .navbar-custom {
-    height: 4rem; /* Further increase the height */
+    height: 3.75rem;
+    padding: 0.5rem;
+    justify-content: center;
+    flex-direction: row;
   }
 
+  .navbar-brand {
+    font-size: 1.5rem;
+    margin: 0 auto;
+    gap: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .navbar-logo {
+    height: 50px;
+    width: auto;
+  }
+
+  .navbar-toggler {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1rem;
+    z-index: 1040; /* Ensure the toggle button remains above the expanded menu */
+  }
 
   .navbar-collapse {
-    background-color: #f8f9fa; /* Keep the background color for smaller screens */
+    background-color: #f8f9fa;
+    position: fixed;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    z-index: 1030; /* Adjust z-index to be below the toggle button */
   }
 
-  .nav-item .nav-link {
-    color: #333; /* Keep the darker text color for better contrast */
+  .navbar-nav {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-link {
+    color: #333;
+    padding: 0.5rem 0;
   }
 }
-

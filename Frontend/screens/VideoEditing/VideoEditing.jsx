@@ -133,7 +133,14 @@ const VideoEditing = () => {
           >
             Launch a beautiful website in minutes
           </motion.p>
-
+          <motion.p
+            className="lead mb-4 text-white"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: sectionInView ? 1 : 0, y: sectionInView ? 0 : 20 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            No matter the stage of your brand’s journey, Graphicblok is here to partner with you in achieving success. Let’s start a conversation—book your free consultation today and discover how we can help your brand thrive.
+          </motion.p>
           {/* Search Bar Section */}
           <motion.div
             className="d-flex justify-content-center mb-4"

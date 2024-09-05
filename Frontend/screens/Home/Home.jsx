@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import backgroundVideo from "../../src/assets/background.mp4";  
+import backgroundVideo from "../../src/assets/homeVideo.mp4";  
 import Cards from "../../components/cards/Cards";
 import WhoWeAre from "../../components/who-we/WhoWeAre";
 import OurWork from "../../components/portfolio/OurWork";
@@ -17,11 +17,9 @@ const Home = () => {
                     <source src={backgroundVideo} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
-                <div className="head">
-                    <h1>CREATIVITY</h1>
-                    <h1>IN</h1>
-                    <h1>EVERY <span style={{ color: "red" }}>PIXEL</span></h1>
-                    <p>Transforming Ideas Into Designs</p>
+                <div className="head w-50 ">
+                   <h1>Unlock Your Business Potential with Tailored Strategies </h1>
+                   <p className="text-white">Your One-Stop Solution for All Digital Needs.</p>
                 </div>
             </div>
             <Cards/>

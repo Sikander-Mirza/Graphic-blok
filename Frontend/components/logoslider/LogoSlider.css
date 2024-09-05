@@ -1,13 +1,21 @@
+.container {
+    padding: 20px;
+}
+
 .logo-item {
     padding: 10px;
-    display: flex !important;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .logo-item img {
-    max-height: 100px;
-    max-width: 150px;
-    padding: 10px;
-    background-color: #ffffff;
+    max-width: 150px; /* Increase this value to make the logos larger */
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease;
+}
+
+.logo-item img:hover {
+    transform: scale(1.1); /* Optional: Adds a slight zoom effect on hover */
 }

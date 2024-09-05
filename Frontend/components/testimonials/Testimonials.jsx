@@ -9,7 +9,7 @@ const testimonials = [
         title: "Highly Recommended!"
     },
     {
-        text: "I recently used Graphicblok's services and I must say, I'm thoroughly impressed. Their attention to detail and commitment to quality is truly commendable. The designs they created were not only visually stunning but also perfectly aligned with my brand. The virtual assistant service was efficient and made the entire process hassle-free. Communication was smooth and they were always prompt in their responses. Highly recommend Graphicblok for anyone looking to elevate their professional presence! & Thank you so much for designing my CV resume, LinkedIn Cover, and another graphical banner. It makes me valuable in the current market so nice work ❤️👍👌",
+        text: "I recently used Graphicblok's services and I must say, I'm thoroughly impressed.❤️👍👌",
         author: "Sunaina Shahbaz",
         title: ""
     },
@@ -19,7 +19,7 @@ const testimonials = [
         title: ""
     },
     {
-        text: "I had an outstanding experience working with Graphicblok. Their expertise and dedication to the project were truly impressive. They consistently delivered high-quality work on time and communicated effectively throughout the process. I appreciate their attention to detail and proactive approach to problem-solving. I highly recommend Graphicblok and look forward to working with them again in the future.",
+        text: "I had an outstanding experience working with Graphicblok. Their expertise and dedication to the project were truly impressive. They consistently delivered high-quality work on time and communicated effectively throughout the process. I appreciate their attention to detail and proactive approach to problem-solving.",
         author: "Izma Khalid",
         title: ""
     },
@@ -44,7 +44,7 @@ const testimonials = [
         title: ""
     },
     {
-        text: "I recently enlisted Graphicblok for their Shopify store creation services, and I couldn't be happier with the outcome. From their impeccable communication and understanding of my business needs to their stunning design work and flawless functionality implementation, Graphicblok surpassed all my expectations. If you're in search of top-tier Shopify store creation services, I wholeheartedly recommend Graphicblok. Thank you for your exceptional work!",
+        text: "I recently enlisted Graphicblok for their Shopify store creation services,Thank you for your exceptional work!",
         author: "Absar Ahmed",
         title: ""
     },
@@ -57,7 +57,7 @@ const testimonials = [
 
 const Testimonials = () => {
     return (
-        <div className="testimonial-container mt-5">
+        <div className="testimonial-container" style={{marginTop:"6rem"}}>
             <h2 className="text-center">Testimonials</h2>
             <hr className="mx-auto mb-4" style={{ width: '50px', border: '2px solid red' }} />
             <Carousel indicators={false}>

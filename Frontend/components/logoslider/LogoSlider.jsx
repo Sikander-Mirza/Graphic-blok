@@ -99,19 +99,18 @@ const LogoSlider = () => {
     };
 
     return (
-        <div className="container mt-5">
+        <div className="container w-100 mt-5">
             {/* First Logo Slider (Right Moving) */}
-            <h2 className="text-center">Our Customers - Set 1</h2>
+            <h2 className="text-center">Our Customers</h2>
             <Slider {...settings1}>
                 {logos1.map((logo, index) => (
                     <div key={index} className="logo-item">
-                        <img src={logo} alt={`Logo ${index + 1}`} className="img-fluid" />
+                        <img src={logo}  alt={`Logo ${index + 1}`} className="img-fluid" />
                     </div>
                 ))}
             </Slider>
 
             {/* Second Logo Slider (Left Moving) */}
-            <h2 className="text-center mt-5">Our Customers - Set 2</h2>
             <Slider {...settings2}>
                 {logos2.map((logo, index) => (
                     <div key={index} className="logo-item">

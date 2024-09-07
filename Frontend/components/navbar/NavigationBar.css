@@ -16,7 +16,8 @@
 
 /* Add this to ensure the dropdown appears correctly on hover */
 .nav-item.dropdown:hover .dropdown-menu {
-  display: block;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
 }
 
 /* Keep the dropdown text looking clean */

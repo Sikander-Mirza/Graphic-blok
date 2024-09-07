@@ -11,7 +11,8 @@ const NavigationBar = () => {
   const [showModal, setShowModal] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false); // Dropdown state
   const navigate = useNavigate(); // Use navigate instead of history
-
+  
+  const handleemail=()=> navigate('/contact');
 
   const handleOpenModal = () => setShowModal(true);
   const handleCloseModal = () => setShowModal(false);
@@ -42,7 +43,7 @@ const NavigationBar = () => {
     <>
       <div className="red-strip">
         <div className="contact-info">
-          <a href="mailto:info@example.com" className="contact-link">
+          <a className="contact-link" onClick={handleemail} style={{cursor:"pointer"}}>
             <FaEnvelope /> graphicblok@gmail.com
           </a>
           <a href="#phone" className="contact-link" onClick={handleOpenModal}>
@@ -59,63 +60,64 @@ const NavigationBar = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto navbar-nav"> {/* Aligns the Nav to the right */}
               <Nav.Link as={Link} to="/" className="nav-link">Home</Nav.Link>
-              
+
               {/* Service dropdown with hover functionality */}
               <NavDropdown
-      title="Service"
-      id="basic-nav-dropdown"
-      show={showDropdown}
-      onMouseEnter={() => setShowDropdown(true)}
-      onMouseLeave={() => setShowDropdown(false)}
-      className="custom-dropdown-menu"
-    >
-      {/* Main dropdown item that navigates to /service */}
-      <NavDropdown.Item as="button" onClick={handleServiceClick}>
-        Service Overview
-      </NavDropdown.Item>
-      {/* Dropdown items for individual services */}
-      <NavDropdown.Item as={Link} to="/web-development">
-        Web Development
-      </NavDropdown.Item>
-      <NavDropdown.Item as={Link} to="/graphics-design">
-        Graphic Designing
-      </NavDropdown.Item>
-      <NavDropdown.Item as={Link} to="/digital-marketing">
-        Digital Marketing
-      </NavDropdown.Item>
-      <NavDropdown.Item as={Link} to="/shopify">
-        Shopify
-      </NavDropdown.Item>
-      <NavDropdown.Item as={Link} to="/web-design">
-        Web Designing
-      </NavDropdown.Item>
-      <NavDropdown.Item as={Link} to="/seo">
-        SEO
-      </NavDropdown.Item>
-      <NavDropdown.Item as={Link} to="/content-copywriting">
-        Copywriting
-      </NavDropdown.Item>
-      <NavDropdown.Item as={Link} to="/video-editing">
-        Video Editing
-      </NavDropdown.Item>
-      <NavDropdown.Item as={Link} to="/social-media-marketing">
-        Social Media Marketing
-      </NavDropdown.Item>
-      <NavDropdown.Item as={Link} to="/Data-Scrapping">
-        Data Scraping
-      </NavDropdown.Item>
-      <NavDropdown.Item as={Link} to="/virtual-assistant">
-        Virtual Assistant
-      </NavDropdown.Item>
-      <NavDropdown.Item as={Link} to="/ui-ux-design">
-        UI/UX Designing
-      </NavDropdown.Item>
-    </NavDropdown>
+                title="Service"
+                id="basic-nav-dropdown"
+                show={showDropdown}
+                onMouseEnter={() => setShowDropdown(true)}
+                onMouseLeave={() => setShowDropdown(false)}
+                className="custom-dropdown-menu"
+                onClick={handleServiceClick}
+              >
+                {/* Main dropdown item that navigates to /service */}
+                <NavDropdown.Item as="button" onClick={handleServiceClick}>
+                  Service Overview
+                </NavDropdown.Item>
+                {/* Dropdown items for individual services */}
+                <NavDropdown.Item as={Link} to="/web-development" onClick={(e) => e.stopPropagation()}>
+                  Web Development
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/graphics-design"onClick={(e) => e.stopPropagation()}>
+                  Graphic Designing
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/digital-marketing"onClick={(e) => e.stopPropagation()}>
+                  Digital Marketing
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/shopify"onClick={(e) => e.stopPropagation()}>
+                  Shopify
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/web-design"onClick={(e) => e.stopPropagation()}>
+                  Web Designing
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/seo"onClick={(e) => e.stopPropagation()}>
+                  SEO
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/content-copywriting"onClick={(e) => e.stopPropagation()}>
+                  Copywriting
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/video-editing"onClick={(e) => e.stopPropagation()}>
+                  Video Editing
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/social-media-marketing"onClick={(e) => e.stopPropagation()}>
+                  Social Media Marketing
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/Data-Scrapping"onClick={(e) => e.stopPropagation()}>
+                  Data Scraping
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/virtual-assistant"onClick={(e) => e.stopPropagation()}>
+                  Virtual Assistant
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/ui-ux-design"onClick={(e) => e.stopPropagation()}>
+                  UI/UX Designing
+                </NavDropdown.Item>
+              </NavDropdown>
 
 
-  
 
-              
+
+
               <Nav.Link as={Link} to="/AboutUs" className="nav-link">About Us</Nav.Link>
               <Nav.Link as={Link} to="/Portfolio" className="nav-link">Portfolio</Nav.Link>
               <Nav.Link as={Link} to="/Shop" className="nav-link">Shop</Nav.Link>
@@ -126,10 +128,10 @@ const NavigationBar = () => {
       </Navbar>
 
       {/* Render the PhoneNumberModal */}
-      <PhoneNumberModal 
-        show={showModal} 
-        handleClose={handleCloseModal} 
-        handleSend={handleSend} 
+      <PhoneNumberModal
+        show={showModal}
+        handleClose={handleCloseModal}
+        handleSend={handleSend}
       />
     </>
   );

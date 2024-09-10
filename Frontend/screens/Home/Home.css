@@ -22,33 +22,36 @@
 
 .home-text-overlay {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); /* Center the overlay */
   text-align: center;
   width: 100%;
   z-index: 10; /* Ensure it stays above the background image */
+  display: flex; /* Use Flexbox for centering */
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
 }
 
 .home-text {
-  width: 60%; /* Adjust as needed */
+  max-width: 60%; /* Adjust max width for responsiveness */
   height: auto;
-  display: block;
-  margin: auto;
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
 }
 
 /* Responsive Styling */
 @media (max-width: 768px) {
   .home-text {
-    width: 70%; /* Adjust text size on medium screens */
+    max-width: 70%; /* Adjust text size on medium screens */
   }
 }
 
 @media (max-width: 480px) {
   .home-text {
-    width: 80%; /* Adjust text size on small screens */
+    max-width: 80%; /* Adjust text size on small screens */
   }
-  .home-image{
+  .home-image {
     height: 50vh; 
   }
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 import HomeImage from "../../src/assets/HomeImage.jpg"; 
-import HomeText from "../../src/assets/Hometext.png";  
+import HomeText from "../../src/assets/HomeText.png";  
 import Cards from "../../components/cards/Cards";
 import WhoWeAre from "../../components/who-we/WhoWeAre";
 import OurWork from "../../components/portfolio/OurWork";

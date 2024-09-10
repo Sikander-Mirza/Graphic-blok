@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
-import backgroundVideo from "../../src/assets/homeVideo.mp4";  
+import HomeImage from "../../src/assets/HomeImage.jpg"; 
+import HomeText from "../../src/assets/Hometext.png";  
 import Cards from "../../components/cards/Cards";
 import WhoWeAre from "../../components/who-we/WhoWeAre";
 import OurWork from "../../components/portfolio/OurWork";
@@ -13,13 +14,13 @@ const Home = () => {
     return (
         <>
             <div className="home-container">
-                <video autoPlay muted loop className="background-video">
-                    <source src={backgroundVideo} type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
-                <div className="head w-50 ">
-                   <h1>Unlock Your Business Potential with Tailored Strategies </h1>
-                   <p className="text-white">Your One-Stop Solution for All Digital Needs.</p>
+                {/* Home Image with Opacity */}
+                <div className="home-image-wrapper">
+                    <img src={HomeImage} alt="Home" className="home-image" />
+                    {/* Centered Text Over Image */}
+                    <div className="home-text-overlay">
+                        <img src={HomeText} alt="Home Text" className="home-text" />
+                    </div>
                 </div>
             </div>
             <Cards/>

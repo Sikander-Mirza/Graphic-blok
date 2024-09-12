@@ -17,20 +17,7 @@ const NavigationBar = () => {
   const handleOpenModal = () => setShowModal(true);
   const handleCloseModal = () => setShowModal(false);
 
-  const handleSend = async (phoneNumber) => {
-    const message = `This is a test message sent to ${phoneNumber} from the navigation bar.`;
-    try {
-      await axios.post('https://graphicblok-server.vercel.app/send-message', {
-        phoneNumber,
-        message,
-      });
-      console.log('Message sent successfully');
-      alert('Your order has been placed successfully!'); // Show a pop-up alert
-    } catch (error) {
-      console.error('Error sending WhatsApp message:', error);
-    }
-    handleCloseModal();
-  };
+
 
   const handleServiceClick = (e) => {
     e.preventDefault(); // Prevent default link behavior
@@ -38,6 +25,7 @@ const NavigationBar = () => {
     navigate("/service"); // Navigate to /service route
   };
 
+  const whatsappMessage = encodeURIComponent("Hello! I'm interested in your services.");
 
   return (
     <>
@@ -46,7 +34,12 @@ const NavigationBar = () => {
           <a className="contact-link" onClick={handleemail} style={{cursor:"pointer"}}>
             <FaEnvelope /> graphicblok@gmail.com
           </a>
-          <a href="#phone" className="contact-link" onClick={handleOpenModal}>
+          <a 
+            href={`https://wa.me/923272075510?text=${whatsappMessage}`} 
+            className="contact-link" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
             <FaPhone /> +92 327 2075510
           </a>
         </div>
@@ -127,12 +120,7 @@ const NavigationBar = () => {
         </Container>
       </Navbar>
 
-      {/* Render the PhoneNumberModal */}
-      <PhoneNumberModal
-        show={showModal}
-        handleClose={handleCloseModal}
-        handleSend={handleSend}
-      />
+
     </>
   );
 };

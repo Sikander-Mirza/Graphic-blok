@@ -33,9 +33,9 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     try {
-      const response = await fetch('https://graphicblok-server.vercel.app/api/email', {
+      const response = await fetch('https://server-eta-puce.vercel.app/email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -48,7 +48,7 @@ const Contact = () => {
         swal("Success!", "Your Email has been placed successfully!", "success");
       } else {
         alert(`Failed to send email: ${result.error}`);
-              swal("An error occurred while sending the email", "error");
+        swal("An error occurred while sending the email", "error");
 
       }
     } catch (error) {
@@ -116,9 +116,19 @@ const Contact = () => {
                 required
               >
                 <option value="">Select a service</option>
-                <option value="Product development">Product development</option>
-                <option value="Web development">Web development</option>
-                <option value="Mobile development">Mobile development</option>
+                <option value="Graphic Designing">Graphic Designing</option>
+                <option value="Digital Marketing">Digital Marketing</option>
+                <option value="CopyWriting">CopyWriting</option>
+                <option value="Web Designing">Web Designing</option>
+                <option value="SEO">SEO</option>
+                <option value="Shopify">Shopify</option>
+                <option value="Video Editing">Video Editing</option>
+                <option value="Social Media Management">Social Media Management</option>
+                <option value="Data Scraping">Data Scraping</option>
+                <option value="Virtual Assistant">Virtual Assistant</option>
+                <option value="UI/UX Designing">UI/UX Designing</option>
+                <option value="Web Development">Web Development</option>
+
               </select>
             </div>
             <div className="mb-3">

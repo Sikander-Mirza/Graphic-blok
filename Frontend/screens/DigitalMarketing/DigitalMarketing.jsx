@@ -7,6 +7,24 @@ import Testimonials from "../../components/testimonials/Testimonials";
 import FAQ from "../../components/faqs/FAQ";
 
 const DigitalMarketing = () => {
+
+  const [businessName, setBusinessName] = useState(""); // Store business name input
+
+  const handleWhatsAppClick = (title = "") => {
+    const phoneNumber = "+923272075510"; // Replace with your phone number
+    let message;
+
+    // If title is passed, use the title for the blog section message
+    if (title) {
+      message = `Hello, I'm interested in your ${title} services. Could you provide more information?`;
+    } else {
+      message = `Hello, I'm interested in services for my business: ${businessName}. Can you provide more information?`;
+    }
+
+    const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappLink, '_blank');
+  };
+
   const [visibleDesigns, setVisibleDesigns] = useState(6);
 
   // Array of design images (replace these with actual image URLs)
@@ -34,7 +52,6 @@ const DigitalMarketing = () => {
       title: "•	Search Engine Marketing (SEM)",
       content: "Targeted campaigns that put your brand in front of the right audience",
       buttonText: "Find a Website",
-      buttonLink: "#",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
     },
@@ -42,7 +59,6 @@ const DigitalMarketing = () => {
       title: "•	Email Marketing",
       content: "Personalized campaigns that nurture leads and boost customer loyalty.",
       buttonText: "Create My Website",
-      buttonLink: "#",
       image: "https://via.placeholder.com/500x300",
       reverse: true,
     },
@@ -50,7 +66,6 @@ const DigitalMarketing = () => {
       title: "•	Pay-Per-Click Advertising (PPC)",
       content: "Cost-effective ads that deliver measurable results.",
       buttonText: "Browse Website Designs",
-      buttonLink: "#",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
     },
@@ -58,7 +73,6 @@ const DigitalMarketing = () => {
       title: "•	Analytics & Reporting",
       content: ": Transparent insights that guide your marketing efforts.",
       buttonText: "Find Your Website",
-      buttonLink: "#",
       image: "https://via.placeholder.com/500x300",
       reverse: true,
     },
@@ -66,7 +80,6 @@ const DigitalMarketing = () => {
       title: "Build the ideal website",
       content: "Creating a functional, visually stunning website is effortless with our website builder. From SEO to e-commerce, customize your site with the features that matter most to your business.",
       buttonText: "Start Building",
-      buttonLink: "#",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
     },
@@ -161,8 +174,12 @@ const DigitalMarketing = () => {
               type="text"
               className="form-control w-50 me-2"
               placeholder="Enter Your Business Name"
+              value={businessName}
+              onChange={(e) => setBusinessName(e.target.value)}
             />
-            <button className="btn btn-danger">Start Now</button>
+            <button className="btn btn-danger" onClick={() => handleWhatsAppClick()}>
+              Start Now
+            </button>
           </motion.div>
 
           {/* <motion.button
@@ -256,9 +273,12 @@ const DigitalMarketing = () => {
               <div className="col-md-6">
                 <h4>{section.title}</h4>
                 <p>{section.content}</p>
-                <a href={section.buttonLink} className="btn btn-danger">
+                <button
+                  className="btn btn-danger"
+                  onClick={() => handleWhatsAppClick(section.title)}
+                >
                   {section.buttonText}
-                </a>
+                </button>
               </div>
               <div className="col-md-6">
                 <img

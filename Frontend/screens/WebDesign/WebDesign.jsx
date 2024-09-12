@@ -9,6 +9,23 @@ import FAQ from "../../components/faqs/FAQ";
 import Slider from 'react-slick';
 
 const WebDesign = () => {
+  const [description, setDescription] = useState(''); // State to hold the description input
+
+  // Function to open WhatsApp with a dynamic message
+  const handleWhatsAppClick = (title = "") => {
+    const phoneNumber = "+923272075510"; // Replace with your phone number
+    let message;
+
+    // If title is passed, use the title for the blog section message
+    if (title) {
+      message = `Hello, I'm interested in your ${title} services. Could you provide more information?`;
+    } else {
+      message = `Hello, I'm interested in design services. Here is my design description: ${description}. Can you assist me further?`;
+    }
+
+    const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappLink, '_blank');
+  };
   const logos1 = [
     'https://via.placeholder.com/150x100?text=Logo+1',
     'https://via.placeholder.com/150x100?text=Logo+2',
@@ -25,7 +42,6 @@ const WebDesign = () => {
       title: "Browse website templates",
       content: "Start with our website builder by entering your business name and exploring a range of designs made just for your brand. Discover a design that matches your brand's distinctive personality.",
       buttonText: "Find a Website",
-      buttonLink: "#",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
     },
@@ -33,7 +49,6 @@ const WebDesign = () => {
       title: "Personalize your website",
       content: "After choosing a template, personalizing it is a breeze. With just a few clicks, you can adjust colors, fonts, and layouts. Add your images, text, and other custom elements to create a unique and engaging website.",
       buttonText: "Create My Website",
-      buttonLink: "#",
       image: "https://via.placeholder.com/500x300",
       reverse: true,
     },
@@ -41,7 +56,6 @@ const WebDesign = () => {
       title: "Launch your website",
       content: "Creating your website is just the start. When you are ready to go live, our website builder makes it easy. We'll guide you through the process, helping you activate and share your new website with the world.",
       buttonText: "Browse Website Designs",
-      buttonLink: "#",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
     },
@@ -49,7 +63,6 @@ const WebDesign = () => {
       title: "Share your story through a custom website",
       content: "Build a website that tells your unique story. A compelling online presence is more than just aesthetics – it's about engaging your audience and sharing what makes your business special.",
       buttonText: "Find Your Website",
-      buttonLink: "#",
       image: "https://via.placeholder.com/500x300",
       reverse: true,
     },
@@ -57,7 +70,6 @@ const WebDesign = () => {
       title: "Build the ideal website",
       content: "Creating a functional, visually stunning website is effortless with our website builder. From SEO to e-commerce, customize your site with the features that matter most to your business.",
       buttonText: "Start Building",
-      buttonLink: "#",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
     },
@@ -148,8 +160,12 @@ const WebDesign = () => {
                   type="text"
                   className="form-control"
                   placeholder="Enter your business name"
+                  value={description}
+                  onChange={(e) => setDescription(e.target.value)} // Capture input
                 />
-                <button className="btn btn-danger">CREATE LOGOS</button>
+                <button className="btn btn-danger" onClick={() => handleWhatsAppClick()}>
+                  Share With Us
+                </button>
               </div>
             </div>
 
@@ -210,9 +226,12 @@ const WebDesign = () => {
               <div className="col-md-6">
                 <h4>{section.title}</h4>
                 <p>{section.content}</p>
-                <a href={section.buttonLink} className="btn btn-danger">
+                <button
+                  className="btn btn-danger"
+                  onClick={() => handleWhatsAppClick(section.title)} // Trigger WhatsApp for each section
+                >
                   {section.buttonText}
-                </a>
+                </button>
               </div>
               <div className="col-md-6">
                 <img

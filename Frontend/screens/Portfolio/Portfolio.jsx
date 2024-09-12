@@ -6,8 +6,7 @@ import Achievements from "../../components/achievements/Achievements";
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import crew from "../../src/assets/crew.jpeg"
-import PhoneNumberModal from '../../components/Menucards/PhoneNumberModel'; // Import the PhoneNumberModal component
-import axios from 'axios';
+
 
 
 const portfolioData = [
@@ -90,10 +89,18 @@ const designs = [
 
 
 
-// Framer Motion animation controls for different sections
+
 
 
 const PortfolioItem = ({ imgSrc, title, description, reverse, onConsultationClick }) => {
+
+  const handleWhatsAppClick = () => {
+    const phoneNumber = "+923272075510"; // Replace with your phone number
+    const message = `Hello, I'm interested in your ${title} services. Could you provide more information?`;
+    const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+    window.open(whatsappLink, '_blank');
+  };
   return (
     <motion.div
       className={`my-5`}
@@ -109,7 +116,9 @@ const PortfolioItem = ({ imgSrc, title, description, reverse, onConsultationClic
         <Col md={6} className="p-5">
           <h3>{title}</h3>
           <p>{description}</p>
-          <Button variant="danger" onClick={onConsultationClick}>Get Free Consultation</Button>
+         <Button variant="danger" onClick={handleWhatsAppClick}>
+            Get Free Consultation
+          </Button>
         </Col>
       </Row>
     </motion.div>
@@ -125,7 +134,15 @@ const Portfolio = () => {
   const [sectionRef, sectionInView] = useInView({ triggerOnce: true, threshold: 0.2 });
   const [blogRef, blogInView] = useInView({ triggerOnce: true, threshold: 0.2 });
   const [designsRef, designsInView] = useInView({ triggerOnce: true, threshold: 0.2 });
+  const [businessName, setBusinessName] = useState(""); // State to hold business name
 
+  const handleWhatsAppClick = () => {
+    const phoneNumber = "+923272075510"; // Replace with your phone number
+    const message = `Hello, I'm interested in services for my business: ${businessName}. Can you provide more information?`;
+    const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+    window.open(whatsappLink, '_blank');
+  }
   // Trigger animation when section comes into view
   React.useEffect(() => {
     if (sectionInView) {
@@ -156,22 +173,7 @@ const Portfolio = () => {
     setSelectedItem(null);
   };
 
-  const handleSendMessage = async (phoneNumber) => {
-    const message = `Hello! I'm interested in the service: ${selectedItem.title}. Please contact me.`;
-
-    try {
-      await axios.post('https://graphicblok-server.vercel.app/send-message', {
-        phoneNumber,
-        message,
-      });
-      console.log('Message sent successfully');
-      alert('Your order has been placed successfully!');
-    } catch (error) {
-      console.error('Error sending WhatsApp message:', error);
-    }
-
-    setShowModal(false);
-  };
+ 
   return (
     <>
       <motion.section
@@ -218,8 +220,10 @@ const Portfolio = () => {
               type="text"
               className="form-control w-50 me-2"
               placeholder="Enter Your Business Name"
+              value={businessName} // Bind input to state
+              onChange={(e) => setBusinessName(e.target.value)} // Update state on input change
             />
-            <button className="btn btn-danger">Start Now</button>
+            <button className="btn btn-danger" onClick={handleWhatsAppClick}>Start Now</button>
           </motion.div>
 
           {/* Intro Section */}
@@ -293,11 +297,7 @@ const Portfolio = () => {
       <LogoSlider />
       {/* <Achievements /> */}
 
-      <PhoneNumberModal
-        show={showModal}
-        handleClose={handleCloseModal}
-        handleSend={handleSendMessage}
-      />
+
     </>
   );
 };

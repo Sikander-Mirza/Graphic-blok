@@ -5,6 +5,24 @@ import { useInView } from 'react-intersection-observer';
 import Testimonials from "../../components/testimonials/Testimonials";
 import FAQ from "../../components/faqs/FAQ";
 const UiUx = () => {
+
+  const [businessName, setBusinessName] = useState(""); // Store business name input
+
+  const handleWhatsAppClick = (title = "") => {
+    const phoneNumber = "+923272075510"; // Replace with your phone number
+    let message;
+
+    // If title is passed, use the title for the blog section message
+    if (title) {
+      message = `Hello, I'm interested in your ${title} services. Could you provide more information?`;
+    } else {
+      message = `Hello, I'm interested in services for my business: ${businessName}. Can you provide more information?`;
+    }
+
+    const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappLink, '_blank');
+  };
+
   const [visibleDesigns, setVisibleDesigns] = useState(6);
 
   // Array of design images (replace these with actual image URLs)
@@ -32,7 +50,6 @@ const UiUx = () => {
       title: "•	User Research & Analysis",
       content: "Understand user needs to design experiences that resonate",
       buttonText: "Find a Website",
-      buttonLink: "#",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
     },
@@ -40,7 +57,6 @@ const UiUx = () => {
       title: "•	Wireframing & Prototyping",
       content: "Visualize the user journey with detailed wireframes and interactive prototypes.",
       buttonText: "Create My Website",
-      buttonLink: "#",
       image: "https://via.placeholder.com/500x300",
       reverse: true,
     },
@@ -48,7 +64,6 @@ const UiUx = () => {
       title: "Interface Design",
       content: "Craft beautiful, functional interfaces that align with your brand identity.",
       buttonText: "Browse Website Designs",
-      buttonLink: "#",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
     },
@@ -56,7 +71,6 @@ const UiUx = () => {
       title: "Usability Testing",
       content: "Ensure seamless user experiences with thorough testing and feedback loops.",
       buttonText: "Find Your Website",
-      buttonLink: "#",
       image: "https://via.placeholder.com/500x300",
       reverse: true,
     },
@@ -64,7 +78,6 @@ const UiUx = () => {
       title: "Build the ideal website",
       content: "Creating a functional, visually stunning website is effortless with our website builder. From SEO to e-commerce, customize your site with the features that matter most to your business.",
       buttonText: "Start Building",
-      buttonLink: "#",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
     },
@@ -150,8 +163,12 @@ const UiUx = () => {
               type="text"
               className="form-control w-50 me-2"
               placeholder="Enter Your Business Name"
+              value={businessName}
+              onChange={(e) => setBusinessName(e.target.value)}
             />
-            <button className="btn btn-danger">Start Now</button>
+            <button className="btn btn-danger" onClick={() => handleWhatsAppClick()}>
+              Start Now
+            </button>
           </motion.div>
 
           {/* <motion.button
@@ -245,9 +262,12 @@ Create engaging, user-centric digital experiences with Graphicblok’s UI and UX
               <div className="col-md-6">
                 <h4>{section.title}</h4>
                 <p>{section.content}</p>
-                <a href={section.buttonLink} className="btn btn-danger">
+                <button
+                  className="btn btn-danger"
+                  onClick={() => handleWhatsAppClick(section.title)}
+                >
                   {section.buttonText}
-                </a>
+                </button>
               </div>
               <div className="col-md-6">
                 <img

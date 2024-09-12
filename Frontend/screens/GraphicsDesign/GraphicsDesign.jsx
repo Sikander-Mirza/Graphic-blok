@@ -8,38 +8,50 @@ import "./GraphicsDesign.css";
 import Slider from 'react-slick';
 
 const GraphicsDesign = () => {
+  const [description, setDescription] = useState(''); // State to hold the description input
 
+  // Function to open WhatsApp with a dynamic message
+  const handleWhatsAppClick = (title = "") => {
+    const phoneNumber = "+923272075510"; // Replace with your phone number
+    let message;
+
+    // If title is passed, use the title for the blog section message
+    if (title) {
+      message = `Hello, I'm interested in your ${title} services. Could you provide more information?`;
+    } else {
+      message = `Hello, I'm interested in design services. Here is my design description: ${description}. Can you assist me further?`;
+    }
+
+    const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappLink, '_blank');
+  };
 
   const blogSections = [
     {
       title: "Brand Identity Creation",
       content: "From logos to brand guidelines, we craft a cohesive identity that tells your brand's story.",
       buttonText: "Find a Website",
-      buttonLink: "#",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
     },
     {
-      title: "•	Marketing Collateral Design",
-      content: ": Flyers, brochures, and banners that captivate and convert.",
+      title: "Marketing Collateral Design",
+      content: "Flyers, brochures, and banners that captivate and convert.",
       buttonText: "Create My Website",
-      buttonLink: "#",
       image: "https://via.placeholder.com/500x300",
       reverse: true,
     },
     {
-      title: "•	Custom Illustrations & Infographics",
-      content: ": Visuals that simplify complex ideas and enhance engagement.",
+      title: "Custom Illustrations & Infographics",
+      content: "Visuals that simplify complex ideas and enhance engagement.",
       buttonText: "Browse Website Designs",
-      buttonLink: "#",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
     },
     {
-      title: "•	Packaging & Merchandise Design",
-      content: ": Designs that not only protect but also promote your product.",
+      title: "Packaging & Merchandise Design",
+      content: "Designs that not only protect but also promote your product.",
       buttonText: "Find Your Website",
-      buttonLink: "#",
       image: "https://via.placeholder.com/500x300",
       reverse: true,
     },
@@ -47,7 +59,6 @@ const GraphicsDesign = () => {
       title: "Build the ideal website",
       content: "Creating a functional, visually stunning website is effortless with our website builder. From SEO to e-commerce, customize your site with the features that matter most to your business.",
       buttonText: "Start Building",
-      buttonLink: "#",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
     },
@@ -131,15 +142,19 @@ const GraphicsDesign = () => {
             <div className="col-md-6 text-start px-5" style={{ marginTop: "6rem", height: "22rem" }}>
               <h1 className="mb-3 mt-5">Graphics Designing</h1>
               <p className="mb-4 text-white">
-              At Graphicblok, we transform ideas into visually stunning designs that resonate with your target audience. Whether you're looking for a complete brand identity overhaul or a single, impactful design, our team of skilled designers ensures that your brand stands out in the crowded marketplace.
+                At Graphicblok, we transform ideas into visually stunning designs that resonate with your target audience. Whether you're looking for a complete brand identity overhaul or a single, impactful design, our team of skilled designers ensures that your brand stands out in the crowded marketplace.
               </p>
               <div className="input-group mb-3">
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="Describe you design now "
+                  placeholder="Describe your design now"
+                  value={description}
+                  onChange={(e) => setDescription(e.target.value)} // Capture input
                 />
-                <button className="btn btn-danger">Share With Us</button>
+                <button className="btn btn-danger" onClick={() => handleWhatsAppClick()}>
+                  Share With Us
+                </button>
               </div>
             </div>
 
@@ -183,8 +198,7 @@ const GraphicsDesign = () => {
           {/* Mapping through blogSections array */}
           {blogSections.map((section, index) => (
             <motion.div
-              className={`row align-items-center mb-5 ${section.reverse ? "flex-md-row-reverse" : ""
-                }`}
+              className={`row align-items-center mb-5 ${section.reverse ? "flex-md-row-reverse" : ""}`}
               key={index}
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: blogInView ? 1 : 0, y: blogInView ? 0 : 50 }}
@@ -193,9 +207,12 @@ const GraphicsDesign = () => {
               <div className="col-md-6">
                 <h4>{section.title}</h4>
                 <p>{section.content}</p>
-                <a href={section.buttonLink} className="btn btn-danger">
+                <button
+                  className="btn btn-danger"
+                  onClick={() => handleWhatsAppClick(section.title)} // Trigger WhatsApp for each section
+                >
                   {section.buttonText}
-                </a>
+                </button>
               </div>
               <div className="col-md-6">
                 <img

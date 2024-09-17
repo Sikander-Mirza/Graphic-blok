@@ -27,11 +27,11 @@ const Footer = () => {
     return (
         <footer className="bg-light text-black">
             <Container>
-                <Row>
+                <Row className="gy-5 gx-5">
                     {/* Logo and Description */}
                     <Col lg={4} md={6} sm={12} className="mb-4 mb-lg-0 text-center text-lg-start">
                         <div className="mt-5 w-75 mx-auto mx-lg-0">
-                            <img src={Logo} alt="Graphicblok Logo" className="d-block mx-auto mx-lg-0" style={{ width: '60px', height: '70px' }} />
+                            <img src={Logo} alt="Graphicblok Logo" className="d-block mx-auto mx-lg-0" style={{ width: '70px', height: '80px' }} />
                             <p className="mb-2 mt-3 logo-description" style={{ fontSize: '14px', lineHeight: '1.4' }}>
                                 The Graphicblok team is a diverse and experienced group of professionals with over 5 years of expertise in both international and domestic markets.
                             </p>
@@ -40,7 +40,7 @@ const Footer = () => {
 
 
                     {/* Expertise Section 1 */}
-                    <Col lg={2} md={3} sm={6} className="text-center text-md-start mb-4 mb-lg-0">
+                    <Col lg={2} md={3} sm={6} className="text-center text-md-start mb-4 mb-lg-0 ">
                         <h6 style={{ fontSize: '16px', fontWeight: 'bold' }} className='mt-5 fs-5'>Our Services</h6>
                         <ul className="list-unstyled">
                             <li className='mt-2' style={{ cursor: "pointer" }} onClick={() => navigate('/Graphics-design')}>Graphic Designing</li>
@@ -53,8 +53,8 @@ const Footer = () => {
                     </Col>
 
                     {/* Expertise Section 2 */}
-                    <Col lg={2} md={3} sm={6} className="text-center text-md-start mb-4 mb-lg-0">
-                        <h6 style={{ fontSize: '16px', fontWeight: 'bold' }} className='mt-5 fs-5'>Our Services</h6>
+                    <Col lg={2} md={3} sm={6} className="text-center text-md-start mb-4 mb-lg-0 ">
+                        <h6 style={{ fontSize: '10px', fontWeight: 'bold' }} className='mt-5 fs-5'>Our Services</h6>
                         <ul className="list-unstyled">
                             <li className='mt-2' style={{ cursor: "pointer" }} onClick={() => navigate('/Video-Editing')}>Video Editing</li>
                             <li className='mt-2' style={{ cursor: "pointer" }} onClick={() => navigate('/Social-Media-Marketing')}>Social Media Management</li>
@@ -66,10 +66,10 @@ const Footer = () => {
                     </Col>
 
                     {/* Contact Information and QR Code */}
-                    <Col lg={4} md={12} sm={12} className="text-center text-md-start">
-                        <h6 className="mb-2 mt-5 fs-5" style={{ fontSize: '16px', fontWeight: 'bold' }}>Reach Us</h6>
+                    <Col lg={4} md={12} sm={12} className="text-center text-md-start" >
+                        <h6 className="mb-2 mt-5 fs-5" style={{ fontSize: '10px', fontWeight: 'bold' }}>Reach Us</h6>
                         <p className="d-flex align-items-center justify-content-center justify-content-md-start" style={{ fontSize: '14px', lineHeight: '1.4' }}>
-                            <MdLocationOn size={18} style={{ marginRight: '8px' }} />
+                            <MdLocationOn size={18} style={{ marginRight: '8px', marginBottom:"36px" }} />
                             <span>
                                 <strong>UAE Office</strong>
                                 <br />
@@ -79,7 +79,7 @@ const Footer = () => {
                             </span>
                         </p>
                         <p className="d-flex align-items-center justify-content-center justify-content-md-start" style={{ fontSize: '14px', lineHeight: '1.4' }}>
-                            <MdLocationOn size={18} style={{ marginRight: '8px' }} />
+                            <MdLocationOn size={18} style={{ marginRight: '8px',marginBottom:"36px" }} />
                             <span>
                                 <strong>PK Office</strong>
                                 <br />
@@ -116,7 +116,7 @@ const Footer = () => {
                     </Col>
 
                     <Col md={6} sm={12}>
-                        <div className="d-flex justify-content-center justify-content-md-end align-items-center">
+                        <div className="d-flex justify-content-center justify-content-md-end align-items-center" style={{marginTop:"1.95rem"}} >
                             {/* Replacing icons with imported images */}
                             <img src={Visa} alt="Visa" style={{ width: '40px', height: '25px', marginRight: '12px' }} />
                             <img src={Master} alt="MasterCard" style={{ width: '40px', height: '25px', marginRight: '12px' }} />
@@ -124,10 +124,10 @@ const Footer = () => {
                             <img src={UnionPay} alt="UnionPay" style={{ width: '50px', height: '35px' }} />
                         </div>
                     </Col>
-                </Row>
+                 </Row>
 
-                {/* Footer Bottom */}
-                <Row className="pt-2 border-top text-center text-md-start">
+                 {/* Footer Bottom */}
+                 <Row className="pt-2 border-top text-center text-md-start">
                     <Col md={6} sm={12} className="d-flex justify-content-center justify-content-md-start align-items-center">
                         <small>&copy; 2024 - Graphicblok. All Rights Reserved</small>
                     </Col>

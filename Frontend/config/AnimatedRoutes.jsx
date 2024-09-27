@@ -26,6 +26,7 @@ import WebDesign from "../screens/WebDesign/WebDesign";
 import ContentCopyWriting from "../screens/ContentCopyWriting/ContentCopyWriting";
 import VideoEditing from "../screens/VideoEditing/VideoEditing";
 import SocialMediaMarketing from "../screens/SocialMediaMarketing/SocialMediaMarketing ";
+import Activity from "../screens/Activity/Activity"
 
 const pageTransition = {
   initial: { opacity: 0, x: 100 },
@@ -181,6 +182,14 @@ const AnimatedRoutes = () => {
           element={
             <motion.div {...pageTransition}>
               <DataScrapping/>
+            </motion.div>
+          }
+        />
+        <Route
+          path="/Activity"
+          element={
+            <motion.div {...pageTransition}>
+              <Activity/>
             </motion.div>
           }
         />

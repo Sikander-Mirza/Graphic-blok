@@ -112,6 +112,7 @@ const NavigationBar = () => {
 
 
               <Nav.Link as={Link} to="/AboutUs" className="nav-link">About Us</Nav.Link>
+              <Nav.Link as={Link} to="/Activity" className="nav-link">Activities</Nav.Link>
               <Nav.Link as={Link} to="/Portfolio" className="nav-link">Portfolio</Nav.Link>
               <Nav.Link as={Link} to="/Shop" className="nav-link">Shop</Nav.Link>
               <Nav.Link as={Link} to="/Contact" className="nav-link">Contact</Nav.Link>

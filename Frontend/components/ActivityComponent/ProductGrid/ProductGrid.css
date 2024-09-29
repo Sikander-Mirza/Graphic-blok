@@ -1,0 +1,7 @@
+.card-img-top {
+    background-color: #f7f7f7; /* Light grey background for image placeholder */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  

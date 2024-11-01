@@ -69,23 +69,23 @@ const Footer = () => {
                     <Col lg={4} md={12} sm={12} className="text-center text-md-start" >
                         <h6 className="mb-2 mt-5 fs-5" style={{ fontSize: '10px', fontWeight: 'bold' }}>Reach Us</h6>
                         <p className="d-flex align-items-center justify-content-center justify-content-md-start" style={{ fontSize: '14px', lineHeight: '1.4' }}>
-                            <MdLocationOn size={18} style={{ marginRight: '8px', marginBottom:"36px" }} />
-                            <span>
+                            <MdLocationOn className='' size={18} style={{ marginRight: '8px', marginBottom:"36px" }} />
+                            <span className='mb-3'>
                                 <strong>UAE Office</strong>
                                 <br />
-                                1S-91, Liaquat Ashraf Colony#01
+                                90 Hartley Dr, Waterbury, CT 06705
                                 <br />
-                                Mehmoodabad, Karachi, Pakistan 75460
+                                
                             </span>
                         </p>
                         <p className="d-flex align-items-center justify-content-center justify-content-md-start" style={{ fontSize: '14px', lineHeight: '1.4' }}>
                             <MdLocationOn size={18} style={{ marginRight: '8px',marginBottom:"36px" }} />
-                            <span>
+                            <span className='mb-3'>
                                 <strong>PK Office</strong>
                                 <br />
-                                1S-91, Liaquat Ashraf Colony#01
+                                L.A.C #01, Mehmoodabad, Karachi (75460)
                                 <br />
-                                Mehmoodabad, Karachi, Pakistan 75460
+                                
                             </span>
                         </p>
                         <p className="d-flex align-items-center justify-content-center justify-content-md-start" style={{ fontSize: '14px', lineHeight: '1.4' }}>

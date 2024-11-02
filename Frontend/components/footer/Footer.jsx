@@ -73,7 +73,7 @@ const Footer = () => {
                             <span className='mb-3'>
                                 <strong>UAE Office</strong>
                                 <br />
-                                90 Hartley Dr, Waterbury, CT 06705
+                                Hartley Dr, Waterbury, CT 06705
                                 <br />
                                 
                             </span>
@@ -106,9 +106,9 @@ const Footer = () => {
                     </div>
                     <Col md={6} sm={12} className="mb-2 mt-3">
                         <div className="d-flex justify-content-center justify-content-md-start align-items-center">
-                            <FaFacebook size={24} style={{ marginRight: '12px', color: '#007bff' }} />
+                            {/* <FaFacebook size={24} style={{ marginRight: '12px', color: '#007bff' }} />
                             <FaInstagram size={24} style={{ marginRight: '12px', color: '#C13584' }} />
-                            <FaLinkedin size={24} style={{ color: '#0077b5' }} />
+                            <FaLinkedin size={24} style={{ color: '#0077b5' }} /> */}
                             <a href="https://igli.me/Graphicblok" target="_blank" rel="noopener noreferrer">
                                 <img src={linktree} alt="" style={{ marginRight: '12px', width: '80px', height: '50px' }} />
                             </a>

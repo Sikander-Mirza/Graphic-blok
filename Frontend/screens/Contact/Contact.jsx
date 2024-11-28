@@ -154,8 +154,8 @@ const Contact = () => {
               <p className='text-white'>+92 327 2075510</p>
             </motion.div>
             <motion.div className="contact-card" variants={cardVariants}>
-              <h5>US Office</h5>
-              <p className='text-white'>90 Hartley Dr, Waterbury, CT 06705</p>
+              <h5>USA Office</h5>
+              <p className='text-white'>Hartley Dr, Waterbury, CT 06705</p>
             </motion.div>
             <motion.div className="contact-card" variants={cardVariants}>
               <h5>PK Office</h5>

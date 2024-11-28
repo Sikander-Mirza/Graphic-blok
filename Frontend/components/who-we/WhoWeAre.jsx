@@ -20,7 +20,8 @@ const WhoWeAre = () => {
         <h1>Graphicblok</h1>
         <h1>Team</h1>
         <p>
-        The Graphicblok team is a diverse and experienced group of professionals with over 5 years of expertise in both international and domestic markets. Our team members specialize in design, digital marketing, SEO, content creation, and web development. With a strong foundation in creativity and innovation, we collaborate closely to deliver exceptional results tailored to each client’s needs. Our commitment to excellence and meticulous attention to detail ensure that every project is executed with precision. Together, we transform ideas into impactful brand experiences, resonating with audiences around the globe.
+        Graphicblok is a dynamic platform offering a vast range of services, including graphic design, digital marketing, SEO, video editing, copywriting, web development and design, e-commerce solutions, and more. Tailored for designers and creatives, our platform features high-quality design assets like templates, icons, and illustrations to empower your projects.
+From initial idea generation to the final marketing push, we provide a comprehensive suite of services that cover every stage of your brand’s journey. Whether you're conceptualizing ideas, creating stunning visuals, developing compelling content, or executing effective marketing strategies, we have everything you need under one roof. This ensures a seamless and cohesive approach to building and enhancing your brand’s digital presence, making Graphicblok your go-to partner for all your creative and marketing needs.
         </p>
       </motion.div>
     </div>

@@ -5,6 +5,8 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Team from "../../components/team/Team";
 import WhoWeAre from "../../components/who-we/WhoWeAre";
+import Mission from "../../src/assets/Mission.jpg"
+import Vision from "../../src/assets/Vision.jpg"
 const AboutUs=()=>{
     const fadeInVariants = {
         hidden: { opacity: 0, y: 50 },
@@ -18,13 +20,15 @@ const AboutUs=()=>{
 
     return (
         <>
+        <div className="mt-5">
         <WhoWeAre/>
+        </div>
         <Container className="my-5">
             {/* First Section */}
             <Row className="align-items-center mb-5" ref={firstSectionRef}>
                 <Col md={6} className="order-md-1 order-2">
                     <motion.img 
-                        src={Aim}
+                        src={Vision}
                         alt="Suppliers and Retailers Work Better Together" 
                         className="img-fluid"
                         initial="hidden"
@@ -40,8 +44,7 @@ const AboutUs=()=>{
                     >
                         <h2 className="text-primary">Vision</h2>
                         <p>
-                        To be the leading provider of high-quality, comprehensive design and digital marketing services, setting new standards of excellence for every client we serve.
-                        </p>
+                        To be the foremost provider of innovative and comprehensive design and digital marketing services, recognized for our commitment to delivering unparalleled quality and exceeding client expectations at every touchpoint. We aim to set new benchmarks of excellence in the industry, empowering our clients to achieve their business goals through creative, data-driven solutions and a customer-centric approach. Our vision is to continually push the boundaries of what is possible, fostering long-term partnerships built on trust, integrity, and mutual success."                        </p>
                     </motion.div>
                 </Col>
             </Row>
@@ -50,7 +53,7 @@ const AboutUs=()=>{
             <Row className="align-items-center mb-5" ref={secondSectionRef}>
                 <Col md={6} className="order-md-2 order-2">
                     <motion.img 
-                        src={Aim} 
+                        src={Mission} 
                         alt="Measuring Engagement" 
                         className="img-fluid"
                         initial="hidden"
@@ -66,8 +69,7 @@ const AboutUs=()=>{
                     >
                         <h2 className="text-primary">Mission Statement</h2>
                         <p>
-                        At Graphicblok, we are dedicated to delivering top-tier solutions across design, marketing, SEO, content and copywriting, virtual assistance for business, and social media management. Through innovative approaches, meticulous attention to detail, and a passion for creativity, we aim to transform visions into impactful, lasting brand experiences tailored to the unique needs of each client.
-                        </p>
+                        At Graphicblok, we are dedicated to delivering top-tier solutions across design, marketing, SEO, content and copywriting, virtual assistance for business, and social media management. Through innovative approaches, meticulous attention to detail, and a passion for creativity, we aim to transform visions into impactful, lasting brand experiences tailored to the unique needs of each client.                        </p>
                     </motion.div>
                 </Col>
             </Row>

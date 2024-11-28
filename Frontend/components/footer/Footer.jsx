@@ -71,7 +71,7 @@ const Footer = () => {
                         <p className="d-flex align-items-center justify-content-center justify-content-md-start" style={{ fontSize: '14px', lineHeight: '1.4' }}>
                             <MdLocationOn className='' size={18} style={{ marginRight: '8px', marginBottom:"36px" }} />
                             <span className='mb-3'>
-                                <strong>UAE Office</strong>
+                                <strong>USA Office</strong>
                                 <br />
                                 Hartley Dr, Waterbury, CT 06705
                                 <br />

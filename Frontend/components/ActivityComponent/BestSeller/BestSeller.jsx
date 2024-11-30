@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Container, Row, Col, Button, Card } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const CustomSection = () => {
@@ -10,7 +10,7 @@ const CustomSection = () => {
         <Container>
           <h2 className="text-center fw-bold mb-4">Наше ателье в цифрах</h2>
           <Row className="text-center">
-            {Array.from({ length: 5 }, (_, index) => (
+            {Array.from({ length: 6 }, (_, index) => (
               <Col sm={6} md={4} lg={2} key={index} className="mb-4">
                 <div
                   className="bg-secondary text-white rounded-circle mx-auto d-flex align-items-center justify-content-center"
@@ -82,18 +82,7 @@ const CustomSection = () => {
         </Container>
       </section>
 
-      {/* Footer-Like Section */}
-      <section className="py-4">
-        <Container>
-          <Row className="text-center">
-            {Array.from({ length: 4 }, (_, index) => (
-              <Col sm={6} md={3} key={index} className="mb-3">
-                <p>Текст {index + 1}</p>
-              </Col>
-            ))}
-          </Row>
-        </Container>
-      </section>
+
     </div>
   );
 };

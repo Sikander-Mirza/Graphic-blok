@@ -1,74 +1,101 @@
-import React from 'react';
-import Slider from 'react-slick';
-import { Container, Row, Col, Button, Card } from 'react-bootstrap';
-import './BestSeller.css';
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css"; 
+import React from "react";
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-const BestSeller = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 1
-        }
-      }
-    ]
-  };
-
-  const products = [
-    { id: 1, name: 'Product 1', price: '$40', image: 'placeholder' },
-    { id: 2, name: 'Product 2', price: '$45', image: 'placeholder' },
-    { id: 3, name: 'Product 3', price: '$50', image: 'placeholder' },
-    { id: 4, name: 'Product 4', price: '$60', image: 'placeholder' }
-  ];
-
+const CustomSection = () => {
   return (
-    <Container fluid className="best-seller-container">
-      <Row className="justify-content-between mb-4">
-        <Col md={4} className="best-seller-text">
-          <h2>Best Seller Product</h2>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-          </p>
-          <Button variant="outline-dark">See More</Button>
-        </Col>
-        <Col md={8} className="best-seller-slider">
-          <Slider {...settings}>
-            {products.map((product) => (
-              <Card key={product.id} className="product-card">
-                <div className="image-placeholder"></div>
-                <Card.Body>
-                  <Card.Title>{product.name}</Card.Title>
-                  <Card.Text>{product.price}</Card.Text>
-                  <div className="stars">
-                    <span>★★★★★</span>
-                  </div>
-                </Card.Body>
-              </Card>
+    <div>
+      {/* Statistics Section */}
+      <section className="py-5 bg-light">
+        <Container>
+          <h2 className="text-center fw-bold mb-4">Наше ателье в цифрах</h2>
+          <Row className="text-center">
+            {Array.from({ length: 5 }, (_, index) => (
+              <Col sm={6} md={4} lg={2} key={index} className="mb-4">
+                <div
+                  className="bg-secondary text-white rounded-circle mx-auto d-flex align-items-center justify-content-center"
+                  style={{ width: "80px", height: "80px" }}
+                >
+                  <span>Иконка</span>
+                </div>
+                <p className="mt-2">Описание цифры {index + 1}</p>
+              </Col>
             ))}
-          </Slider>
-        </Col>
-      </Row>
-    </Container>
+          </Row>
+        </Container>
+      </section>
+
+      {/* Gift Section */}
+      <section className="py-5">
+        <Container>
+          <Row className="align-items-center">
+            <Col md={6} className="mb-4">
+              <h3 className="fw-bold">Дарим вам подарок</h3>
+              <p className="text-muted">
+                Здесь описание вашего подарка или акции. Этот текст будет
+                привлекать внимание клиента и содержать всю важную информацию о
+                предложении.
+              </p>
+              <Button variant="dark">Подробнее</Button>
+            </Col>
+            <Col md={6}>
+              <div
+                className="bg-secondary text-white d-flex justify-content-center align-items-center"
+                style={{
+                  width: "100%",
+                  height: "300px",
+                  borderRadius: "8px",
+                }}
+              >
+                <span>Фото</span>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
+      {/* Ready Solutions Section */}
+      <section className="py-5 bg-light">
+        <Container>
+          <h2 className="text-center fw-bold mb-4">
+            Готовые решения по ценам 2016 года
+          </h2>
+          <Row>
+            {Array.from({ length: 4 }, (_, index) => (
+              <Col sm={6} md={3} key={index} className="mb-4">
+                <Card className="h-100">
+                  <Card.Img
+                    variant="top"
+                    src="https://via.placeholder.com/150"
+                    alt={`Фото ${index + 1}`}
+                  />
+                  <Card.Body>
+                    <Card.Title>Фото {index + 1}</Card.Title>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
+          </Row>
+          <div className="text-center">
+            <Button variant="dark">Посмотреть все примеры</Button>
+          </div>
+        </Container>
+      </section>
+
+      {/* Footer-Like Section */}
+      <section className="py-4">
+        <Container>
+          <Row className="text-center">
+            {Array.from({ length: 4 }, (_, index) => (
+              <Col sm={6} md={3} key={index} className="mb-3">
+                <p>Текст {index + 1}</p>
+              </Col>
+            ))}
+          </Row>
+        </Container>
+      </section>
+    </div>
   );
 };
 
-export default BestSeller;
+export default CustomSection;

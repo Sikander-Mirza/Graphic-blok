@@ -11,7 +11,7 @@ const Activity = () => {
     <>
 
   <ActivitySection/>
-  // <BestSeller/>
+  <BestSeller/>
   // <ProductGrid/>
   // <CountdownComponent/>
     </>

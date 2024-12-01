@@ -29,35 +29,35 @@ const GraphicsDesign = () => {
   const blogSections = [
     {
       title: "Brand Identity Creation",
-      content: "From logos to brand guidelines, we craft a cohesive identity that tells your brand's story.",
+      content: "From logos to brand guidelines, we craft a cohesive identity that tells your brand’s story. Whether you're starting fresh or refining an existing identity, we ensure your brand communicates effectively with your audience.",
       buttonText: "Find a Website",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
     },
     {
       title: "Marketing Collateral Design",
-      content: "Flyers, brochures, and banners that captivate and convert.",
+      content: "Flyers, brochures, business cards, and banners that capture attention and convey your message. Let’s help you create eye-catching materials to promote your brand and connect with your audience.",
       buttonText: "Create My Website",
       image: "https://via.placeholder.com/500x300",
       reverse: true,
     },
     {
       title: "Custom Illustrations & Infographics",
-      content: "Visuals that simplify complex ideas and enhance engagement.",
+      content: "Visuals that creatively explain ideas and drive engagement. Our custom illustrations and infographics are designed to capture attention, explain complex concepts, and make a memorable impact.",
       buttonText: "Browse Website Designs",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
     },
     {
       title: "Packaging & Merchandise Design",
-      content: "Designs that not only protect but also promote your product.",
+      content: "Designs that not only represent your brand but also promote your products. From product packaging to merchandise, we help you create designs that stand out on shelves and make a statement.",
       buttonText: "Find Your Website",
       image: "https://via.placeholder.com/500x300",
       reverse: true,
     },
     {
       title: "Build the ideal website",
-      content: "Creating a functional, visually stunning website is effortless with our website builder. From SEO to e-commerce, customize your site with the features that matter most to your business.",
+      content: "Creating engaging, visually appealing social media content that resonates with your audience. From posts and stories to campaigns, we help you build a social media presence that drives engagement and supports your brand’s growth.",
       buttonText: "Start Building",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
@@ -142,8 +142,7 @@ const GraphicsDesign = () => {
             <div className="col-md-6 text-start px-5" style={{ marginTop: "6rem", height: "22rem" }}>
               <h1 className="mb-3 mt-5">Graphics Designing</h1>
               <p className="mb-4 text-white">
-                At Graphicblok, we transform ideas into visually stunning designs that resonate with your target audience. Whether you're looking for a complete brand identity overhaul or a single, impactful design, our team of skilled designers ensures that your brand stands out in the crowded marketplace.
-              </p>
+              At Graphicblok, we turn creative ideas into visually stunning designs that connect with your target audience. Whether you need a complete brand identity overhaul or a single impactful design, our team of skilled designers ensures that your brand stands out in the competitive marketplace. We bring your vision to life with unique, customized designs that help you achieve your business goals.              </p>
               <div className="input-group mb-3">
                 <input
                   type="text"
@@ -173,10 +172,13 @@ const GraphicsDesign = () => {
       <div className="container text-center py-5">
         {/* Title */}
         <h3 className="mb-4">Make a design ...</h3>
+        <p className='text-center mt-5'>1.	Describe Your Design: Share your design concept or idea with us.</p>
+        <p className='text-center mt-5'>2.	Our Experts Work Their Magic: Our designers will collaborate with you to refine the vision and create a tailored design solution.</p>
+        <p className='text-center mt-5'>3.	Final Product Delivery: Receive your professionally crafted designs ready to elevate your brand’s presence.</p>
 
         {/* Carousel */}
-        <h2 className="text-center">Our Customers - Set 1</h2>
-        <p className='text-center mt-5'>At Graphicblok, we transform ideas into visually stunning designs that resonate with your target audience. Whether you're looking for a complete brand identity overhaul or a single, impactful design, our team of skilled designers ensures that your brand stands out in the crowded marketplace.</p>
+        <h2 className="text-center">Make Your Design a Reality...</h2>
+        <p className='text-center mt-5'>At Graphicblok, we specialize in crafting visually compelling designs that elevate your brand. From logos and marketing materials to complete brand overhauls, we bring your ideas to life with creativity and precision. But we don’t stop at design – we offer seamless web design solutions to ensure your brand makes a lasting impression online. Whether you’re building a new website or revamping an existing one, we help you create a stunning online presence that gets you noticed.</p>
       </div>
 
       <motion.section
@@ -192,8 +194,7 @@ const GraphicsDesign = () => {
             animate={{ opacity: blogInView ? 1 : 0, y: blogInView ? 0 : 20 }}
             transition={{ duration: 0.5 }}
           >
-            Craft the perfect website effortlessly with BrandCrowd
-          </motion.h2>
+Ready to Get Started?          </motion.h2>
 
           {/* Mapping through blogSections array */}
           {blogSections.map((section, index) => (

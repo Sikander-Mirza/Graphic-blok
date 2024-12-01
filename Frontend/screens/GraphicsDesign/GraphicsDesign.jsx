@@ -160,7 +160,7 @@ const GraphicsDesign = () => {
             {/* Right Side - Single Image */}
             <div className="col-md-6 text-center">
               <img
-                src="https://res.cloudinary.com/dwul2hfvj/image/upload/v1732986512/WhatsApp_Image_2024-11-30_at_11.53.04_6eecd743_ys5gde.jpg"
+                src="https://res.cloudinary.com/dwul2hfvj/image/upload/v1732986939/Graphics_rhszsm.png"
                 alt="Design Preview"
                 className="img-fluid"
               />

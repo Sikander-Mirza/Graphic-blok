@@ -31,35 +31,35 @@ const GraphicsDesign = () => {
       title: "Brand Identity Creation",
       content: "From logos to brand guidelines, we craft a cohesive identity that tells your brand’s story. Whether you're starting fresh or refining an existing identity, we ensure your brand communicates effectively with your audience.",
       buttonText: "Find a Website",
-      image: "https://via.placeholder.com/500x300",
+      image: "https://res.cloudinary.com/dwul2hfvj/image/upload/v1732984961/WhatsApp_Image_2024-11-30_at_11.50.00_c8bec996_fn7n8t.jpg",
       reverse: false,
     },
     {
       title: "Marketing Collateral Design",
       content: "Flyers, brochures, business cards, and banners that capture attention and convey your message. Let’s help you create eye-catching materials to promote your brand and connect with your audience.",
       buttonText: "Create My Website",
-      image: "https://via.placeholder.com/500x300",
+      image: "https://res.cloudinary.com/dwul2hfvj/image/upload/v1732986280/WhatsApp_Image_2024-11-30_at_11.49.59_9d9b8478_gn8gap.jpg",
       reverse: true,
     },
     {
       title: "Custom Illustrations & Infographics",
       content: "Visuals that creatively explain ideas and drive engagement. Our custom illustrations and infographics are designed to capture attention, explain complex concepts, and make a memorable impact.",
       buttonText: "Browse Website Designs",
-      image: "https://via.placeholder.com/500x300",
+      image: "https://res.cloudinary.com/dwul2hfvj/image/upload/v1732986383/WhatsApp_Image_2024-11-30_at_11.49.59_5984d606_pu7sgd.jpg",
       reverse: false,
     },
     {
       title: "Packaging & Merchandise Design",
       content: "Designs that not only represent your brand but also promote your products. From product packaging to merchandise, we help you create designs that stand out on shelves and make a statement.",
       buttonText: "Find Your Website",
-      image: "https://via.placeholder.com/500x300",
+      image: "https://res.cloudinary.com/dwul2hfvj/image/upload/v1732986337/WhatsApp_Image_2024-11-30_at_11.49.59_26dba88f_fg1evs.jpg",
       reverse: true,
     },
     {
       title: "Build the ideal website",
       content: "Creating engaging, visually appealing social media content that resonates with your audience. From posts and stories to campaigns, we help you build a social media presence that drives engagement and supports your brand’s growth.",
       buttonText: "Start Building",
-      image: "https://via.placeholder.com/500x300",
+      image: "https://res.cloudinary.com/dwul2hfvj/image/upload/v1732986434/WhatsApp_Image_2024-11-30_at_11.50.00_f424f15a_jcqljh.jpg",
       reverse: false,
     },
   ];
@@ -160,7 +160,7 @@ const GraphicsDesign = () => {
             {/* Right Side - Single Image */}
             <div className="col-md-6 text-center">
               <img
-                src="combined-image-sample.png"
+                src="https://res.cloudinary.com/dwul2hfvj/image/upload/v1732986512/WhatsApp_Image_2024-11-30_at_11.53.04_6eecd743_ys5gde.jpg"
                 alt="Design Preview"
                 className="img-fluid"
               />
@@ -198,32 +198,35 @@ Ready to Get Started?          </motion.h2>
 
           {/* Mapping through blogSections array */}
           {blogSections.map((section, index) => (
-            <motion.div
-              className={`row align-items-center mb-5 ${section.reverse ? "flex-md-row-reverse" : ""}`}
-              key={index}
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: blogInView ? 1 : 0, y: blogInView ? 0 : 50 }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
-            >
-              <div className="col-md-6">
-                <h4>{section.title}</h4>
-                <p>{section.content}</p>
-                <button
-                  className="btn btn-danger"
-                  onClick={() => handleWhatsAppClick(section.title)} // Trigger WhatsApp for each section
-                >
-                  {section.buttonText}
-                </button>
-              </div>
-              <div className="col-md-6">
-                <img
-                  src={section.image}
-                  alt={section.title}
-                  className="img-fluid rounded"
-                />
-              </div>
-            </motion.div>
-          ))}
+  <motion.div
+    className={`row align-items-center mb-5 ${section.reverse ? "flex-md-row-reverse" : ""}`}
+    key={index}
+    initial={{ opacity: 0, y: 50 }}
+    animate={{ opacity: blogInView ? 1 : 0, y: blogInView ? 0 : 50 }}
+    transition={{ duration: 0.5, delay: index * 0.2 }}
+  >
+    <div className="col-md-6">
+      <h4>{section.title}</h4>
+      <p>{section.content}</p>
+      <button
+        className="btn btn-danger"
+        onClick={() => handleWhatsAppClick(section.title)}
+      >
+        {section.buttonText}
+      </button>
+    </div>
+    <div className="col-md-6">
+      <img
+        src={section.image}
+        alt={section.title}
+        className="img-fluid rounded"
+        onError={(e) => {
+          e.target.src = "https://via.placeholder.com/300";
+        }}
+      />
+    </div>
+  </motion.div>
+))}
         </div>
       </motion.section>
       <Testimonials />

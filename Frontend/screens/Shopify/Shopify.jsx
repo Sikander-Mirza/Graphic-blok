@@ -29,56 +29,53 @@ const Shopify = () => {
  
   // Array of design images (replace these with actual image URLs)
   const designs = [
-    "https://via.placeholder.com/400x200",
-    "https://via.placeholder.com/400x200",
-    "https://via.placeholder.com/400x200",
-    "https://via.placeholder.com/400x200",
-    "https://via.placeholder.com/400x200",
-    "https://via.placeholder.com/400x200",
-    "https://via.placeholder.com/400x200",
-    "https://via.placeholder.com/400x200",
-    "https://via.placeholder.com/400x200",
-    "https://via.placeholder.com/400x200",
-    "https://via.placeholder.com/400x200",
-    "https://via.placeholder.com/400x200",
-    "https://via.placeholder.com/400x200",
-    "https://via.placeholder.com/400x200",
-    "https://via.placeholder.com/400x200",
+    "https://res.cloudinary.com/dwul2hfvj/image/upload/v1733134313/SHopify_Page-15_yyo0rv.jpg",
+    "https://res.cloudinary.com/dwul2hfvj/image/upload/v1733134312/SHopify_Page-10_iw0vgd.jpg",
+    "https://res.cloudinary.com/dwul2hfvj/image/upload/v1733134312/SHopify_Page-14_fxz4cd.jpg",
+    "https://res.cloudinary.com/dwul2hfvj/image/upload/v1733134312/SHopify_Page-16_hcqcuc.jpg",
+    "https://res.cloudinary.com/dwul2hfvj/image/upload/v1733134311/SHopify_Page-12_yi6qm0.jpg",
+    "https://res.cloudinary.com/dwul2hfvj/image/upload/v1733134310/SHopify_Page-13_a2aejr.jpg",
+    "https://res.cloudinary.com/dwul2hfvj/image/upload/v1733134310/SHopify_Page-11_b6lfpa.jpg",
+    "https://res.cloudinary.com/dwul2hfvj/image/upload/v1733134310/SHopify_Page-05_whsccl.jpg",
+    "https://res.cloudinary.com/dwul2hfvj/image/upload/v1733134309/SHopify_Page-08_oivvo2.jpg",
+    "https://res.cloudinary.com/dwul2hfvj/image/upload/v1733134309/SHopify_Page-07_ppvghz.jpg",
+    "https://res.cloudinary.com/dwul2hfvj/image/upload/v1733134309/SHopify_Page-06_tqhjnq.jpg",
+    "https://res.cloudinary.com/dwul2hfvj/image/upload/v1733134309/SHopify_Page-09_emrxdz.jpg",
   ];
 
   // Array for blog section content
   const blogSections = [
     {
       title: "•	Custom Store Development",
-      content: "Tailored online stores that reflect your brand’s personality.",
+      content: "Bring your brand to life with a custom-built online store designed to reflect your unique identity. From layout to functionality, we tailor every element to align with your vision and engage your customers.",
       buttonText: "Find a Website",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
     },
     {
       title: "•	Product Listings & Management",
-      content: "Organized, optimized listings that attract buyers",
+      content: "Organize and showcase your products with professionally curated listings. Our solutions help you create visually appealing and well-structured catalogs that captivate your audience and drive sales effortlessly.",
       buttonText: "Create My Website",
       image: "https://via.placeholder.com/500x300",
       reverse: true,
     },
     {
       title: "•	Payment Gateway Integration",
-      content: "Secure and convenient payment solutions.",
+      content: "Ensure a smooth and secure checkout process with seamless payment gateway integration. We support multiple payment options to offer your customers a hassle-free shopping experience.",
       buttonText: "Browse Website Designs",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
     },
     {
       title: "•	Performance Optimization",
-      content: "Fast-loading, user-friendly stores that convert visitors into customers.",
+      content: "Maximize your website's potential with speed and performance enhancements. Our solutions ensure a fast, responsive site that not only attracts visitors but turns them into loyal customers, boosting conversion rates.",
       buttonText: "Find Your Website",
       image: "https://via.placeholder.com/500x300",
       reverse: true,
     },
     {
       title: "Build the ideal website",
-      content: "Creating a functional, visually stunning website is effortless with our website builder. From SEO to e-commerce, customize your site with the features that matter most to your business.",
+      content: "Create a powerful, visually stunning, and high-performing website that truly represents your brand. Our comprehensive website solutions cover everything from initial design to ongoing optimization. With advanced features and scalable options, your store will be equipped to grow alongside your business, delivering an exceptional experience to every visitor.",
       buttonText: "Start Building",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
@@ -144,7 +141,7 @@ const Shopify = () => {
             animate={{ opacity: sectionInView ? 1 : 0, y: sectionInView ? 0 : 20 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Launch a beautiful website in minutes
+            Launch a stunning website effortlessly
           </motion.p>
           <motion.p
             className="lead mb-4 text-white"
@@ -152,7 +149,7 @@ const Shopify = () => {
             animate={{ opacity: sectionInView ? 1 : 0, y: sectionInView ? 0 : 20 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            No matter the stage of your brand’s journey, Graphicblok is here to partner with you in achieving success. Let’s start a conversation—book your free consultation today and discover how we can help your brand thrive.
+           Whether you're just starting or looking to expand, Graphicblok is your trusted partner in reaching new heights. Let’s connect—schedule your consultation today and discover how we can elevate your brand’s success.
           </motion.p>
           {/* Search Bar Section */}
           <motion.div
@@ -190,7 +187,7 @@ const Shopify = () => {
             transition={{ duration: 0.5, delay: 0.8 }}
             style={{marginTop:"7rem"}}
           >
-            Design a website you'll love in an instant. Try it for free!
+           Create a Website You'll Be Proud Of—Quick and Easy!
           </motion.h4>
           <motion.p
             className="mb-5 text-white"
@@ -198,7 +195,7 @@ const Shopify = () => {
             animate={{ opacity: sectionInView ? 1 : 0, y: sectionInView ? 0 : 20 }}
             transition={{ duration: 0.5, delay: 1 }}
           >
-            Our E-Commerce/Shopify solutions are designed to create a seamless shopping experience that drives sales and builds customer loyalty. We handle everything from setting up your store to optimizing it for performance
+            Our E-Commerce/Shopify solutions are tailored to provide a seamless shopping experience that boosts sales and fosters customer loyalty. From store setup to performance optimization, we handle every detail so you can focus on growing your business
           </motion.p>
 
           {/* Template Showcase */}
@@ -247,7 +244,7 @@ const Shopify = () => {
             animate={{ opacity: blogInView ? 1 : 0, y: blogInView ? 0 : 20 }}
             transition={{ duration: 0.5 }}
           >
-            Craft the perfect website effortlessly with BrandCrowd
+           Create the Perfect E Commerce Store with Ease
           </motion.h2>
 
           {/* Mapping through blogSections array */}

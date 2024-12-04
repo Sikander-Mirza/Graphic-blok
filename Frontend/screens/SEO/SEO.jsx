@@ -27,50 +27,51 @@ const SEO = () => {
     window.open(whatsappLink, '_blank');
   };
   const logos1 = [
-    'https://via.placeholder.com/150x100?text=Logo+1',
-    'https://via.placeholder.com/150x100?text=Logo+2',
-    'https://via.placeholder.com/150x100?text=Logo+3',
-    'https://via.placeholder.com/150x100?text=Logo+4',
-    'https://via.placeholder.com/150x100?text=Logo+5',
-    'https://via.placeholder.com/150x100?text=Logo+6',
-    'https://via.placeholder.com/150x100?text=Logo+7',
-    'https://via.placeholder.com/150x100?text=Logo+8',
+    'https://res.cloudinary.com/dwul2hfvj/image/upload/v1733239596/SEo_Page-12_wdegld.jpg',
+    'https://res.cloudinary.com/dwul2hfvj/image/upload/v1733239608/SEo_Page-09_pr0ixe.jpg',
+    'https://res.cloudinary.com/dwul2hfvj/image/upload/v1733239597/SEo_Page-14_s3pfdv.jpg',
+    'https://res.cloudinary.com/dwul2hfvj/image/upload/v1733239596/SEo_Page-13_tsxg9x.jpg',
+    'https://res.cloudinary.com/dwul2hfvj/image/upload/v1733239596/SEo_Page-10_saca6n.jpg',
+    'https://res.cloudinary.com/dwul2hfvj/image/upload/v1733239594/SEo_Page-08_emfwqf.jpg',
+    'https://res.cloudinary.com/dwul2hfvj/image/upload/v1733239594/SEo_Page-11_s3xc0v.jpg',
+    'https://res.cloudinary.com/dwul2hfvj/image/upload/v1733239594/SEo_Page-06_nqzbpd.jpg',
+    'https://res.cloudinary.com/dwul2hfvj/image/upload/v1733239594/SEo_Page-07_dhvpug.jpg'
   ];
 
   const blogSections = [
     {
-      title: "•	On-Page SEO",
-      content: "SOptimize your website’s content and structure for search engines.",
+      title: "On-Page SEO",
+      content: "Optimize your website’s content, meta tags, and internal structure to ensure it’s search-engine friendly. We focus on keyword placement, user experience, and content quality to boost your visibility.",
       buttonText: "Find a Website",
-      image: "https://via.placeholder.com/500x300",
+      image: "https://res.cloudinary.com/dwul2hfvj/image/upload/v1733240010/SEO_Pic-01_cqum7s.jpg",
       reverse: false,
     },
     {
-      title: "•	Off-Page SEO",
-      content: ": Build authority with high-quality backlinks and content marketing",
+      title: "Off-Page SEO",
+      content: "Build a strong online presence with high-quality backlinks, content marketing, and social signals. We enhance your sites authority and credibility across the web to drive consistent traffic.",
       buttonText: "Create My Website",
-      image: "https://via.placeholder.com/500x300",
+      image: "https://res.cloudinary.com/dwul2hfvj/image/upload/v1733239981/SEO_Pic-02_tlv165.jpg",
       reverse: true,
     },
     {
-      title: "•	Technical SEO",
-      content: ": Ensure your site is fast, secure, and search-engine friendly.",
+      title: "Technical SEO",
+      content: "Ensure your website performs at its best. We address technical aspects like site speed, mobile responsiveness, secure connections, and indexing to make your site easier for search engines to crawl and rank.",
       buttonText: "Browse Website Designs",
-      image: "https://via.placeholder.com/500x300",
+      image: "https://res.cloudinary.com/dwul2hfvj/image/upload/v1733240011/SEO_Pic-03_-_Copy_jj6mp7.jpg",
       reverse: false,
     },
     {
-      title: "•	Local SEO",
-      content: "Dominate local search results and attract nearby customers.",
+      title: "Local SEO",
+      content: "Get noticed by local customers who are ready to buy. We optimize your site for location-based searches, helping you dominate local listings and attract nearby clients.",
       buttonText: "Find Your Website",
-      image: "https://via.placeholder.com/500x300",
+      image: "https://res.cloudinary.com/dwul2hfvj/image/upload/v1733240011/SEO_Pic-04_ckp5jf.jpg",
       reverse: true,
     },
     {
       title: "Build the ideal website",
-      content: "Creating a functional, visually stunning website is effortless with our website builder. From SEO to e-commerce, customize your site with the features that matter most to your business.",
+      content: "Maximize your online store’s visibility and sales with targeted E-Commerce SEO strategies. We optimize product pages, categories, and descriptions to ensure your store ranks higher in search results, driving more conversions and repeat customers.",
       buttonText: "Start Building",
-      image: "https://via.placeholder.com/500x300",
+      image: "https://res.cloudinary.com/dwul2hfvj/image/upload/v1733239980/SEO_Pic-05_wb6xx9.jpg",
       reverse: false,
     },
   ];
@@ -151,10 +152,9 @@ const SEO = () => {
           >
             {/* Left Side - Text Content */}
             <div className="col-md-6 text-start px-5" style={{ marginTop: "6rem" }}>
-              <h1 className="mb-3">SEO (Search Engine Optimization)</h1>
+              <h1 className="mb-3">Unlock Your Website's Full Potential with Our SEO Services</h1>
               <p className="mb-4 text-white">
-              Boost your online visibility and drive organic traffic to your website with our SEO services. We implement proven strategies that help you rank higher in search results and attract qualified leads.
-              </p>
+              At Graphicblok, we understand that visibility is everything in the digital world. Our comprehensive SEO services are designed to enhance your website’s ranking, drive organic traffic, and convert visitors into loyal customers.              </p>
               <div className="input-group mb-3">
                 <input
                   type="text"
@@ -172,7 +172,7 @@ const SEO = () => {
             {/* Right Side - Single Image */}
             <div className="col-md-6 text-center">
               <img
-                src="combined-image-sample.png"
+                src="https://res.cloudinary.com/dwul2hfvj/image/upload/v1733239597/Pngtree_seo_seo_search_blue_purple_3931351_vstvus.png"
                 alt="Design Preview"
                 className="img-fluid"
               />

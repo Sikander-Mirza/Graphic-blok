@@ -46,36 +46,36 @@ const VirtualAssistant = () => {
   // Array for blog section content
   const blogSections = [
     {
-      title: "•	Administrative Support",
-      content: "Schedule management, email handling, and more to keep you organized.",
+      title: "Administrative Support",
+      content: "Streamline your operations with our expert administrative assistance. From calendar management to document handling, we ensure your day-to-day tasks are organized and efficient",
       buttonText: "Find a Website",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
     },
     {
-      title: "•	Customer Service",
-      content: ": Professional communication to enhance client relationships.",
+      title: "Customer Service & Communication ",
+      content: "Enhance customer satisfaction with timely responses and proactive communication. Our virtual assistants handle inquiries, manage emails, and maintain strong client relationships",
       buttonText: "Create My Website",
       image: "https://via.placeholder.com/500x300",
       reverse: true,
     },
     {
-      title: "•	Research & Reporting",
-      content: ": Comprehensive research and detailed reports delivered on time.",
+      title: "Data Entry & Management ",
+      content: "Management Keep your data accurate and up-to-date with our data entry services. We help you maintain records, organize files, and input information seamlessly",
       buttonText: "Browse Website Designs",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
     },
     {
-      title: "•	Task Automation",
-      content: "Implement automation tools to improve efficiency and reduce manual workload.",
+      title: "Social Media Management & Scheduling ",
+      content: "Elevate your online presence with our social media management services. We handle content scheduling, audience engagement, and analytics to keep your social platforms active and relevant",
       buttonText: "Find Your Website",
       image: "https://via.placeholder.com/500x300",
       reverse: true,
     },
     {
-      title: "Build the ideal website",
-      content: "Creating a functional, visually stunning website is effortless with our website builder. From SEO to e-commerce, customize your site with the features that matter most to your business.",
+      title: "Personalized Task Management ",
+      content: "Let us take on the tasks that weigh you down. Whether it’s booking appointments, coordinating meetings, or researching information, our virtual assistants provide customized support to meet your specific needs.",
       buttonText: "Start Building",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
@@ -133,7 +133,7 @@ const VirtualAssistant = () => {
             transition={{ duration: 0.5 }}
             style={{marginTop:"7rem"}}
           >
-           Virtual Assistant
+           Maximize Efficiency with Graphicblok's Virtual Assistant Services
           </motion.h2>
           <motion.p
             className="lead mb-4 text-white"
@@ -141,7 +141,7 @@ const VirtualAssistant = () => {
             animate={{ opacity: sectionInView ? 1 : 0, y: sectionInView ? 0 : 20 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Launch a beautiful website in minutes
+            Unlock the power of streamlined operations and enhanced productivity with Graphicblok’s Virtual Assistant services. Our skilled team provides professional support tailored to your needs, allowing you to focus on what truly matters—growing your business.
           </motion.p>
           <motion.p
             className="lead mb-4 text-white"
@@ -149,7 +149,6 @@ const VirtualAssistant = () => {
             animate={{ opacity: sectionInView ? 1 : 0, y: sectionInView ? 0 : 20 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            No matter the stage of your brand’s journey, Graphicblok is here to partner with you in achieving success. Let’s start a conversation—book your free consultation today and discover how we can help your brand thrive.
           </motion.p>
           {/* Search Bar Section */}
           <motion.div
@@ -187,7 +186,7 @@ const VirtualAssistant = () => {
             transition={{ duration: 0.5, delay: 0.8 }}
             style={{marginTop:"7rem"}}
           >
-            Design a website you'll love in an instant. Try it for free!
+            Empowering Your Business with Seamless Support
           </motion.h4>
           <motion.p
             className="mb-5 text-white"
@@ -195,8 +194,7 @@ const VirtualAssistant = () => {
             animate={{ opacity: sectionInView ? 1 : 0, y: sectionInView ? 0 : 20 }}
             transition={{ duration: 0.5, delay: 1 }}
           >
-Streamline your operations with our reliable Virtual Assistant services. Our skilled VAs handle a wide range of administrative tasks, enabling you to focus on growing your business while we manage the day-to-day activities.         
-</motion.p>
+From administrative tasks to customer support, our Virtual Assistant services ensure smooth workflows and effective communication. Let us handle the routine tasks while you focus on achieving your goals.</motion.p>
 
           {/* Template Showcase */}
           <div className="row" ref={designsRef}>
@@ -244,8 +242,7 @@ Streamline your operations with our reliable Virtual Assistant services. Our ski
             animate={{ opacity: blogInView ? 1 : 0, y: blogInView ? 0 : 20 }}
             transition={{ duration: 0.5 }}
           >
-            Craft the perfect website effortlessly with BrandCrowd
-          </motion.h2>
+Our Virtual Assistant Services:          </motion.h2>
 
           {/* Mapping through blogSections array */}
           {blogSections.map((section, index) => (

@@ -40,36 +40,36 @@ const SocialMediaMarketing = () => {
 
   const blogSections = [
     {
-      title: "•	Content Creation & Curation",
-      content: "High-quality content that resonates with your audience.",
+      title: "Content Strategy & Planning",
+      content: "We develop custom content strategies that align with your business objectives. Our team crafts a content calendar, ensuring timely, relevant, and consistent posts across platforms. This approach helps you stay ahead of trends and keep your audience engaged.",
       buttonText: "Find a Website",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
     },
     {
-      title: "•	Audience Engagement",
-      content: ": Build relationships and foster a loyal community..",
+      title: "Creative Content Creation",
+      content: "Our team produces high-quality content, including images, videos, infographics, and written posts. We ensure each piece reflects your brand’s voice and resonates with your target audience, creating content that sparks interest and encourages interaction.",
       buttonText: "Create My Website",
       image: "https://via.placeholder.com/500x300",
       reverse: true,
     },
     {
-      title: "•	Analytics & Reporting:",
-      content: "Data-driven insights to refine your social strategy.",
+      title: "Platform-Specific Management",
+      content: "We manage your social media presence across various platforms like Instagram, Facebook, LinkedIn, and Twitter. From posting to engaging with followers, we handle everything to ensure your brand maintains a consistent and professional image.",
       buttonText: "Browse Website Designs",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
     },
     {
-      title: "•	Paid Social Advertising",
-      content: "Targeted ads that drive traffic and conversions..",
+      title: "Community Engagement & Growth",
+      content: "Building relationships with your audience is crucial. We actively manage comments, messages, and interactions to foster community engagement. Our goal is to increase your followers, drive discussions, and convert followers into loyal customers.",
       buttonText: "Find Your Website",
       image: "https://via.placeholder.com/500x300",
       reverse: true,
     },
     {
-      title: "Build the ideal website",
-      content: "Creating a functional, visually stunning website is effortless with our website builder. From SEO to e-commerce, customize your site with the features that matter most to your business.",
+      title: "Performance Analytics & Reporting",
+      content: "We continuously track your social media performance using detailed analytics. Our team provides monthly reports to measure the success of your campaigns, including growth metrics, engagement rates, and ROI, helping you understand your audience and adjust strategies accordingly.",
       buttonText: "Start Building",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
@@ -152,10 +152,9 @@ const SocialMediaMarketing = () => {
           >
             {/* Left Side - Text Content */}
             <div className="col-md-6 text-start px-5" style={{ marginTop: "6rem" }}>
-              <h1 className="mb-3">Social Media Management</h1>
+              <h1 className="mb-3">Social Media Management Services by Graphicblok</h1>
               <p className="mb-4 text-white">
-              Maximize your brand's impact on social media with our expert management services. We create and execute strategies that increase engagement, grow your following, and build a strong online community.
-              </p>
+              At Graphicblok, we help you build a compelling social media presence that resonates with your audience. Our social media management and content creation services are designed to enhance engagement, boost brand visibility, and drive business growth. Whether you're a startup or an established brand, we tailor our approach to meet your specific needs. With a focus on creativity, strategy, and analytics, we ensure your social media platforms deliver results that matter.              </p>
               <div className="input-group mb-3">
                 <input
                   type="text"
@@ -210,8 +209,7 @@ const SocialMediaMarketing = () => {
             animate={{ opacity: blogInView ? 1 : 0, y: blogInView ? 0 : 20 }}
             transition={{ duration: 0.5 }}
           >
-            Craft the perfect website effortlessly with BrandCrowd
-          </motion.h2>
+Social Media Management & Content Creation Services:          </motion.h2>
 
           {/* Mapping through blogSections array */}
           {blogSections.map((section, index) => (

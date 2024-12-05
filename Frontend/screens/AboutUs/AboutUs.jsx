@@ -33,7 +33,7 @@ const AboutUs = () => {
                             animate={thirdSectionInView ? "visible" : "hidden"}
                             variants={fadeInVariants}
                         >
-                            <h2 className="text-primary">GraphicBlok</h2>
+                            <h2 className="text-primary">Graphicblok</h2>
                             <p>
                             Graphicblok is a dynamic platform offering a vast range of services, including graphic design, digital marketing, SEO, video editing, copywriting, web development and design, e-commerce solutions, and more. Tailored for designers and creatives, our platform features high-quality design assets like templates, icons, and illustrations to empower your projects.
                             From initial idea generation to the final marketing push, we provide a comprehensive suite of services that cover every stage of your brand’s journey. Whether you're conceptualizing ideas, creating stunning visuals, developing compelling content, or executing effective marketing strategies, we have everything you need under one roof. This ensures a seamless and cohesive approach to building and enhancing your brand’s digital presence, making Graphicblok your go-to partner for all your creative and marketing needs                            </p>

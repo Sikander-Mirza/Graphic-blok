@@ -47,36 +47,36 @@ const UiUx = () => {
   // Array for blog section content
   const blogSections = [
     {
-      title: "•	User Research & Analysis",
-      content: "Understand user needs to design experiences that resonate",
+      title: "User-Centered Design",
+      content: "We prioritize the needs of your users by conducting thorough research and creating designs that resonate with your audience. Our user-centered approach ensures your digital platform is intuitive and easy to navigate",
       buttonText: "Find a Website",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
     },
     {
-      title: "•	Wireframing & Prototyping",
-      content: "Visualize the user journey with detailed wireframes and interactive prototypes.",
+      title: "Responsive Design",
+      content: "Reach your audience on any device with our responsive design solutions. We ensure your website or app looks and works flawlessly on desktops, tablets, and smartphones.",
       buttonText: "Create My Website",
       image: "https://via.placeholder.com/500x300",
       reverse: true,
     },
     {
-      title: "Interface Design",
-      content: "Craft beautiful, functional interfaces that align with your brand identity.",
+      title: "Wireframing & Prototyping",
+      content: "Bring your ideas to life with detailed wireframes and prototypes. We visualize the structure and flow of your platform, providing you with a clear roadmap before development begins.",
       buttonText: "Browse Website Designs",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
     },
     {
-      title: "Usability Testing",
-      content: "Ensure seamless user experiences with thorough testing and feedback loops.",
+      title: "Interaction Design",
+      content: "Create memorable experiences with thoughtful interaction design. From smooth transitions to user-friendly buttons and controls, we ensure every interaction on your platform is seamless and engaging.",
       buttonText: "Find Your Website",
       image: "https://via.placeholder.com/500x300",
       reverse: true,
     },
     {
-      title: "Build the ideal website",
-      content: "Creating a functional, visually stunning website is effortless with our website builder. From SEO to e-commerce, customize your site with the features that matter most to your business.",
+      title: "Usability Testing & Optimization",
+      content: "Refine and improve your digital platform with continuous usability testing and optimization. We gather real user feedback to make informed design decisions that improve functionality and user satisfaction.",
       buttonText: "Start Building",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
@@ -142,7 +142,7 @@ const UiUx = () => {
             animate={{ opacity: sectionInView ? 1 : 0, y: sectionInView ? 0 : 20 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Launch a beautiful website in minutes
+Maximize Impact with Graphicblok's UI & UX Designing Services
           </motion.p>
           <motion.p
             className="lead mb-4 text-white"
@@ -150,8 +150,7 @@ const UiUx = () => {
             animate={{ opacity: sectionInView ? 1 : 0, y: sectionInView ? 0 : 20 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            No matter the stage of your brand’s journey, Graphicblok is here to partner with you in achieving success. Let’s start a conversation—book your free consultation today and discover how we can help your brand thrive.
-          </motion.p>
+Transform your digital presence with Graphicblok’s UI & UX Designing services. Our expert designers craft seamless user experiences and visually stunning interfaces that elevate your website or app, making it intuitive, engaging, and effective.          </motion.p>
           {/* Search Bar Section */}
           <motion.div
             className="d-flex justify-content-center mb-4"
@@ -188,16 +187,14 @@ const UiUx = () => {
             transition={{ duration: 0.5, delay: 0.8 }}
             style={{marginTop:"7rem"}}
           >
-            Design a website you'll love in an instant. Try it for free!
-          </motion.h4>
+Create Engaging Digital Experiences          </motion.h4>
           <motion.p
             className="mb-5 text-white"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: sectionInView ? 1 : 0, y: sectionInView ? 0 : 20 }}
             transition={{ duration: 0.5, delay: 1 }}
           >
-Create engaging, user-centric digital experiences with Graphicblok’s UI and UX Designing services. We design interfaces that are not only visually appealing but also intuitive and easy to navigate, enhancing user satisfaction and loyalty.
-</motion.p>
+Our team specializes in designing interfaces that are not only aesthetically pleasing but also user-friendly. We ensure your users have a smooth and enjoyable journey, enhancing customer satisfaction and retention.</motion.p>
 
           {/* Template Showcase */}
           <div className="row" ref={designsRef}>
@@ -245,7 +242,7 @@ Create engaging, user-centric digital experiences with Graphicblok’s UI and UX
             animate={{ opacity: blogInView ? 1 : 0, y: blogInView ? 0 : 20 }}
             transition={{ duration: 0.5 }}
           >
-            Craft the perfect website effortlessly with BrandCrowd
+            Our UI & UX Designing Services
           </motion.h2>
 
           {/* Mapping through blogSections array */}

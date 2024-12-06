@@ -39,36 +39,36 @@ const WebDesign = () => {
 
   const blogSections = [
     {
-      title: "Browse website templates",
-      content: "Start with our website builder by entering your business name and exploring a range of designs made just for your brand. Discover a design that matches your brand's distinctive personality.",
+      title: "Custom Website Design",
+      content: "We create bespoke websites that reflect your unique brand identity, ensuring a personalized touch for every client. Our custom designs are responsive, meaning your site will perform optimally across all devices—desktop, tablet, and mobile.",
       buttonText: "Find a Website",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
     },
     {
-      title: "Personalize your website",
-      content: "After choosing a template, personalizing it is a breeze. With just a few clicks, you can adjust colors, fonts, and layouts. Add your images, text, and other custom elements to create a unique and engaging website.",
+      title: "E-Commerce Web Design",
+      content: "Graphicblok specializes in designing online stores that provide a seamless shopping experience. From intuitive product pages to secure payment systems, we build e-commerce sites designed to drive sales and improve customer satisfaction.",
       buttonText: "Create My Website",
       image: "https://via.placeholder.com/500x300",
       reverse: true,
     },
     {
-      title: "Launch your website",
-      content: "Creating your website is just the start. When you are ready to go live, our website builder makes it easy. We'll guide you through the process, helping you activate and share your new website with the world.",
+      title: "UI/UX Design",
+      content: "Our UI/UX design approach focuses on making websites not only look great but also be easy to navigate. We prioritize the user journey, ensuring that visitors enjoy an engaging and smooth experience from start to finish.",
       buttonText: "Browse Website Designs",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
     },
     {
-      title: "Share your story through a custom website",
-      content: "Build a website that tells your unique story. A compelling online presence is more than just aesthetics – it's about engaging your audience and sharing what makes your business special.",
+      title: "SEO-Optimized Websites",
+      content: "Every website we design incorporates SEO best practices, ensuring that your site is easily discoverable by search engines. From keyword-rich content to fast loading speeds, we enhance your site's visibility and ranking.",
       buttonText: "Find Your Website",
       image: "https://via.placeholder.com/500x300",
       reverse: true,
     },
     {
-      title: "Build the ideal website",
-      content: "Creating a functional, visually stunning website is effortless with our website builder. From SEO to e-commerce, customize your site with the features that matter most to your business.",
+      title: "Ongoing Support & Maintenance",
+      content: "At Graphicblok, our services don’t end after the website is live. We offer ongoing support and maintenance, ensuring that your site remains up-to-date, secure, and performing at its best, even after launch.",
       buttonText: "Start Building",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
@@ -151,9 +151,10 @@ const WebDesign = () => {
           >
             {/* Left Side - Text Content */}
             <div className="col-md-6 text-start px-5" style={{ marginTop: "6rem" }}>
-              <h1 className="mb-3">Logo Design</h1>
+              <h1 className="mb-3">Web Designing Services by Graphicblok</h1>
               <p className="mb-4 text-white">
-                Make a logo design online or browse thousands of premium logos for sale. Start for FREE.
+              At Graphicblok, we offer tailored web design solutions that align with your business needs. Our team specializes in creating visually appealing, functional websites that boost your online presence. Whether you need a simple site or a complex e-commerce platform, we collaborate with you to bring your vision to life. With a focus on user experience, speed, and SEO optimization, we ensure every website is responsive and high-performing.
+We provide a full range of services including custom designs, redesigns, and integrations like e-commerce, CMS, and UI/UX enhancements, ensuring your website stands out and delivers results.
               </p>
               <div className="input-group mb-3">
                 <input
@@ -209,7 +210,7 @@ const WebDesign = () => {
             animate={{ opacity: blogInView ? 1 : 0, y: blogInView ? 0 : 20 }}
             transition={{ duration: 0.5 }}
           >
-            Craft the perfect website effortlessly with BrandCrowd
+            Web Designing Services:
           </motion.h2>
 
           {/* Mapping through blogSections array */}

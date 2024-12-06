@@ -48,36 +48,36 @@ const DataScrapping = () => {
   // Array for blog section content
   const blogSections = [
     {
-      title: "Custom Data Extraction",
-      content: "Tailored scraping solutions to meet your specific data needs.",
+      title: "Lead Generation Data",
+      content: "Streamline your sales process with high-quality leads extracted from online sources like business directories, LinkedIn, and industry-specific platforms. Identify potential customers, understand their needs, and customize your outreach for maximum impact",
       buttonText: "Find a Website",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
     },
     {
-      title: "Data Cleaning & Validation",
-      content: "Ensure accuracy and relevance with our meticulous data cleaning process.",
+      title: "Competitor Analysis",
+      content: "Gain a competitive edge by analyzing your competitors' strategies, products, pricing models, and customer feedback. Our data collection reveals key insights to help you identify opportunities, forecast trends, and refine your business strategy.",
       buttonText: "Create My Website",
       image: "https://via.placeholder.com/500x300",
       reverse: true,
     },
     {
-      title: "Automated Solutions",
-      content: "Efficient, scalable scraping tools for large-scale data collection",
+      title: "Market Research Data",
+      content: "Make informed decisions with accurate market research data. We gather critical insights on industry trends, consumer behavior, and emerging opportunities, providing a comprehensive understanding of your target market and growth areas.",
       buttonText: "Browse Website Designs",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
     },
     {
-      title: "Competitive Analysis",
-      content: "Gain an edge with in-depth competitor data and market trends.",
+      title: "E-commerce Data Extraction",
+      content: "Enhance your online store with detailed data extraction from top e-commerce platforms. We collect product descriptions, customer reviews, pricing, and inventory details, helping you optimize listings, set competitive prices, and improve customer satisfaction.",
       buttonText: "Find Your Website",
       image: "https://via.placeholder.com/500x300",
       reverse: true,
     },
     {
-      title: "Build the ideal website",
-      content: "Creating a functional, visually stunning website is effortless with our website builder. From SEO to e-commerce, customize your site with the features that matter most to your business.",
+      title: "Contact & Directory Scraping",
+      content: "Expand your network with verified contact information from business directories, websites, and public databases. Our contact scraping services deliver accurate lists of potential clients, partners, and suppliers for targeted outreach and efficient growth.",
       buttonText: "Start Building",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
@@ -136,7 +136,7 @@ const DataScrapping = () => {
             transition={{ duration: 0.5 }}
             style={{marginTop:"7rem"}}
           >
-            Data Scraping
+            Maximize Your Business Potential with Graphicblok's Data Scraping Services
           </motion.h2>
           <motion.p
             className="lead mb-4 text-white"
@@ -152,8 +152,7 @@ const DataScrapping = () => {
             animate={{ opacity: sectionInView ? 1 : 0, y: sectionInView ? 0 : 20 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            No matter the stage of your brand’s journey, Graphicblok is here to partner with you in achieving success. Let’s start a conversation—book your free consultation today and discover how we can help your brand thrive.
-          </motion.p>
+Transform raw data into actionable insights with Graphicblok’s comprehensive data scraping solutions. We help businesses harness the power of accurate, clean, and valuable data to drive smarter decisions and sustainable growth.          </motion.p>
           {/* Search Bar Section */}
           <motion.div
             className="d-flex justify-content-center mb-4"
@@ -190,7 +189,7 @@ const DataScrapping = () => {
             transition={{ duration: 0.5, delay: 0.8 }}
             style={{marginTop:"7rem"}}
           >
-            Design a website you'll love in an instant. Try it for free!
+            Empowering Your Business with Actionable Data Insights
           </motion.h4>
           <motion.p
             className="mb-5 text-white"
@@ -198,7 +197,7 @@ const DataScrapping = () => {
             animate={{ opacity: sectionInView ? 1 : 0, y: sectionInView ? 0 : 20 }}
             transition={{ duration: 0.5, delay: 1 }}
           >
-Unlock the power of data with Graphicblok’s Data Scraping services. We extract valuable insights from various online sources to fuel your business decisions, providing you with clean, accurate, and actionable data.          </motion.p>
+Our expert data scraping services deliver tailored insights that empower your business to thrive in a competitive landscape. Let us unlock the true potential of data for you!</motion.p>
 
           {/* Template Showcase */}
           <div className="row" ref={designsRef}>
@@ -246,7 +245,7 @@ Unlock the power of data with Graphicblok’s Data Scraping services. We extract
             animate={{ opacity: blogInView ? 1 : 0, y: blogInView ? 0 : 20 }}
             transition={{ duration: 0.5 }}
           >
-            Craft the perfect website effortlessly with BrandCrowd
+            Our Data Scraping Services
           </motion.h2>
 
           {/* Mapping through blogSections array */}

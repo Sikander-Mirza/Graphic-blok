@@ -46,36 +46,36 @@ const ContentCopyWriting = () => {
   // Array for blog section content
   const blogSections = [
     {
-      title: "•	Website Copywriting",
-      content: ": Persuasive and SEO-friendly content that converts visitors into customers.",
+      title: "Website & SEO Copy",
+      content: "Craft compelling website content that captures your brand’s voice while optimizing for search engines. Our SEO copywriting ensures higher visibility and better user engagement, driving conversions.",
       buttonText: "Find a Website",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
     },
     {
-      title: "•	Blog & Article Writing",
-      content: "Informative and engaging content that establishes your brand as an industry leader..",
+      title: "Product Descriptions & E-commerce Copy",
+      content: "Enhance your product listings with persuasive descriptions that highlight key features and benefits, driving sales and improving customer satisfaction.",
       buttonText: "Create My Website",
       image: "https://via.placeholder.com/500x300",
       reverse: true,
     },
     {
-      title: "•	Product Descriptions",
-      content: "Compelling descriptions that highlight the benefits of your products.",
+      title: "Blog, Articles & Brand Stories",
+      content: "Establish your authority with engaging blog posts, articles, and brand stories. We provide valuable, informative content that educates your audience, fosters trust, and enhances your brand's image.",
       buttonText: "Browse Website Designs",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
     },
     {
-      title: "•	Content Strategy",
-      content: "A comprehensive plan that aligns with your business goals and audience needs.",
+      title: "Social Media Content & Email Campaigns",
+      content: "Grow your brand’s social media presence with creative, on-brand posts that foster engagement, while our expertly written email campaigns drive action and build customer relationships.",
       buttonText: "Find Your Website",
       image: "https://via.placeholder.com/500x300",
       reverse: true,
     },
     {
-      title: "Build the ideal website",
-      content: "Creating a functional, visually stunning website is effortless with our website builder. From SEO to e-commerce, customize your site with the features that matter most to your business.",
+      title: "Press Releases & Marketing Copy",
+      content: "Create buzz with professionally written press releases and marketing copy. We help you share key news, product launches, and updates that capture attention and expand your reach.",
       buttonText: "Start Building",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
@@ -133,7 +133,7 @@ const ContentCopyWriting = () => {
             transition={{ duration: 0.5 }}
             style={{marginTop:"7rem"}}
           >
-            Content & Copywriting
+            Maximize Your Brand Voice with Graphicblok's Copywriting Services
           </motion.h2>
           <motion.p
             className="lead mb-4 text-white"
@@ -149,8 +149,7 @@ const ContentCopyWriting = () => {
             animate={{ opacity: sectionInView ? 1 : 0, y: sectionInView ? 0 : 20 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            No matter the stage of your brand’s journey, Graphicblok is here to partner with you in achieving success. Let’s start a conversation—book your free consultation today and discover how we can help your brand thrive.
-          </motion.p>
+Unlock the power of persuasive, clear, and engaging content with Graphicblok’s expert copywriting services. Our team crafts high-quality, tailored content that captures attention, builds trust, and drives action, helping your business communicate more effectively with your audience.          </motion.p>
           {/* Search Bar Section */}
           <motion.div
             className="d-flex justify-content-center mb-4"
@@ -187,7 +186,7 @@ const ContentCopyWriting = () => {
             transition={{ duration: 0.5, delay: 0.8 }}
             style={{marginTop:"7rem"}}
           >
-           
+           Empowering Your Brand with Impactful Messaging
           </motion.h4>
           <motion.p
             className="mb-5 text-white"
@@ -195,8 +194,7 @@ const ContentCopyWriting = () => {
             animate={{ opacity: sectionInView ? 1 : 0, y: sectionInView ? 0 : 20 }}
             transition={{ duration: 0.5, delay: 1 }}
           >
-           Words matter. Our content and copywriting services are designed to communicate your brand's message effectively, engaging your audience, and driving action.
-          </motion.p>
+From website copy to product descriptions, blogs, and social media posts, our copywriting services deliver compelling narratives that resonate with your audience. Let us transform your ideas into words that inspire and convert.          </motion.p>
 
           {/* Template Showcase */}
           <div className="row" ref={designsRef}>
@@ -244,7 +242,7 @@ const ContentCopyWriting = () => {
             animate={{ opacity: blogInView ? 1 : 0, y: blogInView ? 0 : 20 }}
             transition={{ duration: 0.5 }}
           >
-            Craft the perfect website effortlessly with BrandCrowd
+Our Copywriting Services
           </motion.h2>
 
           {/* Mapping through blogSections array */}

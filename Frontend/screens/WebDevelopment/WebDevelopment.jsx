@@ -47,36 +47,36 @@ const WebDevelopment = () => {
   // Array for blog section content
   const blogSections = [
     {
-      title: "Custom Web Development",
-      content: "Tailored solutions built to meet your unique business needs.",
+      title: "Custom Website Development",
+      content: "Tailored to your business needs, our custom websites combine functionality with aesthetics. We build responsive, high-performance websites that reflect your brand identity and deliver a seamless user experience.",
       buttonText: "Find a Website",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
     },
     {
-      title: "E-Commerce Solutions",
-      content: "Powerful, user-friendly online stores that drive sales.",
+      title: "E-commerce Website Development",
+      content: "Boost your online sales with a robust e-commerce platform. We develop feature-rich, secure, and scalable e-commerce websites designed to enhance user experience, streamline transactions, and maximize conversions.",
       buttonText: "Create My Website",
       image: "https://via.placeholder.com/500x300",
       reverse: true,
     },
     {
-      title: "CMS Integration",
-      content: "Seamless content management systems for easy site updates and management.",
+      title: "CMS Development",
+      content: "Easily manage your website content with our custom Content Management System (CMS) solutions. We create intuitive CMS platforms, empowering you to update content, images, and products effortlessly.",
       buttonText: "Browse Website Designs",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
     },
     {
-      title: "Performance Optimization",
-      content: "Speed, security, and scalability enhancements to keep your site running smoothly.",
+      title: "Web Application Development",
+      content: "Enhance your business operations with custom web applications. Our team develops scalable and secure web apps tailored to meet your specific business needs, improving efficiency and user engagement.",
       buttonText: "Find Your Website",
       image: "https://via.placeholder.com/500x300",
       reverse: true,
     },
     {
-      title: "Build the ideal website",
-      content: "Creating a functional, visually stunning website is effortless with our website builder. From SEO to e-commerce, customize your site with the features that matter most to your business.",
+      title: "Website Maintenance & Support",
+      content: "Keep your website running smoothly with our maintenance and support services. We ensure regular updates, security patches, and performance optimization, so your website remains secure and up-to-date.",
       buttonText: "Start Building",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
@@ -134,7 +134,7 @@ const WebDevelopment = () => {
             transition={{ duration: 0.5 }}
             style={{ marginTop: "7rem" }}
           >
-            Web Development
+            Elevate Your Business with Graphicblok's Web Development Services
           </motion.h2>
           <motion.p
             className="lead mb-4 text-white"
@@ -142,7 +142,7 @@ const WebDevelopment = () => {
             animate={{ opacity: sectionInView ? 1 : 0, y: sectionInView ? 0 : 20 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Launch a beautiful website in minutes
+            
           </motion.p>
           <motion.p
             className="lead mb-4 text-white"
@@ -150,8 +150,7 @@ const WebDevelopment = () => {
             animate={{ opacity: sectionInView ? 1 : 0, y: sectionInView ? 0 : 20 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            No matter the stage of your brand’s journey, Graphicblok is here to partner with you in achieving success. Let’s start a conversation—book your free consultation today and discover how we can help your brand thrive.
-          </motion.p>
+Transform your digital presence with Graphicblok’s comprehensive web development solutions. We build powerful, user-friendly, and visually stunning websites that drive engagement, enhance user experience, and support your business goals.          </motion.p>
           {/* Search Bar Section */}
           <motion.div
             className="d-flex justify-content-center mb-4"
@@ -181,7 +180,7 @@ const WebDevelopment = () => {
             transition={{ duration: 0.5, delay: 0.8 }}
             style={{ marginTop: "7rem" }}
           >
-            Design a website you'll love in an instant. Try it for free!
+            Building Future-Ready Digital Experiences
           </motion.h4>
           <motion.p
             className="mb-5 text-white"
@@ -189,8 +188,7 @@ const WebDevelopment = () => {
             animate={{ opacity: sectionInView ? 1 : 0, y: sectionInView ? 0 : 20 }}
             transition={{ duration: 0.5, delay: 1 }}
           >
-            At Graphicblok, we build robust, scalable, and secure websites that serve as powerful tools for your business. From custom development to ongoing support, our web development services ensure your site is optimized for performance, security, and growth
-
+Our expert web development services ensure your website stands out in today’s competitive market. Let's create a dynamic online presence that fuels your growth!
           </motion.p>
 
           {/* Template Showcase */}
@@ -239,7 +237,7 @@ const WebDevelopment = () => {
             animate={{ opacity: blogInView ? 1 : 0, y: blogInView ? 0 : 20 }}
             transition={{ duration: 0.5 }}
           >
-            Craft the perfect website effortlessly with BrandCrowd
+            Our Web Development Services
           </motion.h2>
 
           {/* Mapping through blogSections array */}

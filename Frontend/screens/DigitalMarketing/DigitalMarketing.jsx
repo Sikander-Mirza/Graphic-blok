@@ -49,36 +49,36 @@ const DigitalMarketing = () => {
   // Array for blog section content
   const blogSections = [
     {
-      title: "•	Search Engine Marketing (SEM)",
-      content: "Targeted campaigns that put your brand in front of the right audience",
+      title: "Strategic SEO & PPC",
+      content: "Boost your online visibility with tailored SEO strategies and cost-effective PPC campaigns that drive targeted traffic and maximize ROI",
       buttonText: "Find a Website",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
     },
     {
-      title: "•	Email Marketing",
-      content: "Personalized campaigns that nurture leads and boost customer loyalty.",
+      title: "Dynamic Social Media Marketing",
+      content: "Engage and grow your audience with compelling social media content and multi-platform campaigns, enhancing brand awareness and loyalty.",
       buttonText: "Create My Website",
       image: "https://via.placeholder.com/500x300",
       reverse: true,
     },
     {
-      title: "•	Pay-Per-Click Advertising (PPC)",
-      content: "Cost-effective ads that deliver measurable results.",
+      title: "Content Marketing Excellence",
+      content: "Build authority and customer trust with high-quality, SEO-optimized content that engages, informs, and converts.",
       buttonText: "Browse Website Designs",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
     },
     {
-      title: "•	Analytics & Reporting",
-      content: ": Transparent insights that guide your marketing efforts.",
+      title: "Effective Email Marketing",
+      content: "Convert leads into loyal customers through personalized, automated email campaigns that nurture relationships and drive repeat business.",
       buttonText: "Find Your Website",
       image: "https://via.placeholder.com/500x300",
       reverse: true,
     },
     {
-      title: "Build the ideal website",
-      content: "Creating a functional, visually stunning website is effortless with our website builder. From SEO to e-commerce, customize your site with the features that matter most to your business.",
+      title: "5.	Conversion Rate Optimization (CRO)",
+      content: "Enhance user experience and maximize conversions with data-driven strategies, optimized landing pages, and streamlined customer journeys.",
       buttonText: "Start Building",
       image: "https://via.placeholder.com/500x300",
       reverse: false,
@@ -136,7 +136,7 @@ const DigitalMarketing = () => {
             transition={{ duration: 0.5 }}
             style={{marginTop:"7rem"}}
           >
-            Digital Marketing
+            Transform Your Business with Graphicblok's Digital Marketing Services
           </motion.h2>
           <motion.p
             className="lead mb-4 text-white"
@@ -144,7 +144,7 @@ const DigitalMarketing = () => {
             animate={{ opacity: sectionInView ? 1 : 0, y: sectionInView ? 0 : 20 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Launch a beautiful website in minutes
+            
           </motion.p>
           <motion.p
             className="lead mb-4 text-white"
@@ -160,8 +160,7 @@ const DigitalMarketing = () => {
             animate={{ opacity: sectionInView ? 1 : 0, y: sectionInView ? 0 : 20 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            No matter the stage of your brand’s journey, Graphicblok is here to partner with you in achieving success. Let’s start a conversation—book your free consultation today and discover how we can help your brand thrive.
-          </motion.p>
+Unlock your brand's full potential with Graphicblok’s comprehensive digital marketing solutions. We drive visibility, engagement, and conversions through tailored strategies that deliver measurable results.          </motion.p>
 
           {/* Search Bar Section */}
           <motion.div
@@ -199,7 +198,7 @@ const DigitalMarketing = () => {
             transition={{ duration: 0.5, delay: 0.8 }}
             style={{marginTop:"7rem"}}
           >
-            Design a website you'll love in an instant. Try it for free!
+           Strategic Digital Marketing for Sustainable Growth
           </motion.h4>
           <motion.p
             className="mb-5 text-white"
@@ -207,8 +206,7 @@ const DigitalMarketing = () => {
             animate={{ opacity: sectionInView ? 1 : 0, y: sectionInView ? 0 : 20 }}
             transition={{ duration: 0.5, delay: 1 }}
           >
-           Elevate your brand's online presence with our comprehensive digital marketing services. We develop and implement data-driven strategies that drive traffic, increase conversions, and maximize your return on investment
-          </motion.p>
+Our expert digital marketing services are designed to elevate your online presence, connect with your target audience, and boost ROI. Let's fuel your growth with data-driven strategies!          </motion.p>
 
           {/* Template Showcase */}
           <div className="row" ref={designsRef}>
@@ -256,7 +254,7 @@ const DigitalMarketing = () => {
             animate={{ opacity: blogInView ? 1 : 0, y: blogInView ? 0 : 20 }}
             transition={{ duration: 0.5 }}
           >
-            Craft the perfect website effortlessly with BrandCrowd
+            Comprehensive Digital Marketing Solutions by Graphicblok
           </motion.h2>
 
           {/* Mapping through blogSections array */}

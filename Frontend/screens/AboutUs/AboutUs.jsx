@@ -41,7 +41,7 @@ const AboutUs = () => {
                     </Col>
                     <Col md={6} className="order-md-2 order-1">
                         <motion.img
-                            src={Aim}
+                            src="https://res.cloudinary.com/dwul2hfvj/image/upload/v1733508505/OQK0J91-min_llkoqf.png"
                             alt="Who is Advantage Group International?"
                             className="img-fluid"
                             initial="hidden"

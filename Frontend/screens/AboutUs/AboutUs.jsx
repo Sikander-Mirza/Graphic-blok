@@ -76,7 +76,7 @@ const AboutUs = () => {
                     </Col>
                 </Row>
 
-                {/* Third Section: Previously Second Section */}
+                
                 <Row className="align-items-center mb-5" ref={thirdSectionRef}>
                     <Col md={6} className="order-md-2 order-1">
                         <motion.img

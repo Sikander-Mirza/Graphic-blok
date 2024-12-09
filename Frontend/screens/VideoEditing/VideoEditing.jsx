@@ -27,21 +27,18 @@ const VideoEditing = () => {
 
   // Array of design images (replace these with actual image URLs)
   const designs = [
-    "https://via.placeholder.com/400x200",
-    "https://via.placeholder.com/400x200",
-    "https://via.placeholder.com/400x200",
-    "https://via.placeholder.com/400x200",
-    "https://via.placeholder.com/400x200",
-    "https://via.placeholder.com/400x200",
-    "https://via.placeholder.com/400x200",
-    "https://via.placeholder.com/400x200",
-    "https://via.placeholder.com/400x200",
-    "https://via.placeholder.com/400x200",
-    "https://via.placeholder.com/400x200",
-    "https://via.placeholder.com/400x200",
-    "https://via.placeholder.com/400x200",
-    "https://via.placeholder.com/400x200",
-    "https://via.placeholder.com/400x200",
+    "https://res.cloudinary.com/dwul2hfvj/image/upload/v1733658473/WhatsApp_Image_2024-12-07_at_11.38.32_657e819e_h1sqj1.jpg",
+    "https://res.cloudinary.com/dwul2hfvj/image/upload/v1733658473/WhatsApp_Image_2024-12-07_at_11.38.32_e7b7f4b5_qbka0a.jpg",
+    "https://res.cloudinary.com/dwul2hfvj/image/upload/v1733658472/WhatsApp_Image_2024-12-07_at_11.38.32_a8685c70_dvmpi5.jpg",
+    "https://res.cloudinary.com/dwul2hfvj/image/upload/v1733658473/WhatsApp_Image_2024-12-07_at_11.38.32_d35fd723_ozpf2z.jpg",
+    "https://res.cloudinary.com/dwul2hfvj/image/upload/v1733658473/WhatsApp_Image_2024-12-07_at_11.38.32_f8a9c4e3_nrogms.jpg",
+    "https://res.cloudinary.com/dwul2hfvj/image/upload/v1733658473/WhatsApp_Image_2024-12-07_at_11.38.32_d3cfba3b_bafdcu.jpg",
+    "https://res.cloudinary.com/dwul2hfvj/image/upload/v1733658472/WhatsApp_Image_2024-12-07_at_11.38.32_62b1e1e2_ajx42z.jpg",
+    "https://res.cloudinary.com/dwul2hfvj/image/upload/v1733658472/WhatsApp_Image_2024-12-07_at_11.38.32_11c8e104_zdwgmf.jpg",
+    "https://res.cloudinary.com/dwul2hfvj/image/upload/v1733658472/WhatsApp_Image_2024-12-07_at_11.38.32_46b89e0b_awkuuz.jpg",
+    "https://res.cloudinary.com/dwul2hfvj/image/upload/v1733658471/WhatsApp_Image_2024-12-07_at_11.38.32_59ed959c_gi3lyw.jpg",
+    "https://res.cloudinary.com/dwul2hfvj/image/upload/v1733658472/WhatsApp_Image_2024-12-07_at_11.38.32_3d4e8a3f_cnh0fh.jpg",
+    "https://res.cloudinary.com/dwul2hfvj/image/upload/v1733658471/WhatsApp_Image_2024-12-07_at_11.38.32_a55a208e_zmjve7.jpg",
   ];
 
   // Array for blog section content

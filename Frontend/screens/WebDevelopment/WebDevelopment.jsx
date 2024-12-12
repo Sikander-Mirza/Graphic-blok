@@ -25,7 +25,6 @@ const WebDevelopment = () => {
   };
   const [visibleDesigns, setVisibleDesigns] = useState(6);
 
-  // Array of design images (replace these with actual image URLs)
   const designs = [
     "https://res.cloudinary.com/dwul2hfvj/image/upload/v1733751880/1_whqp4m.jpg",
     "https://res.cloudinary.com/dwul2hfvj/image/upload/v1733752026/2_fvf8xg.jpg",

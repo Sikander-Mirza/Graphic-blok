@@ -38,9 +38,6 @@ const WebDevelopment = () => {
     "https://res.cloudinary.com/dwul2hfvj/image/upload/v1733752110/10_mqg15d.jpg",
     "https://res.cloudinary.com/dwul2hfvj/image/upload/v1733752119/11_forfup.jpg",
     "https://res.cloudinary.com/dwul2hfvj/image/upload/v1733752126/12_sxgaxl.jpg",
-    "https://via.placeholder.com/400x200",
-    "https://via.placeholder.com/400x200",
-    "https://via.placeholder.com/400x200",
   ];
 
   // Array for blog section content

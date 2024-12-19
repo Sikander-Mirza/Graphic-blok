@@ -40,7 +40,6 @@ const WebDevelopment = () => {
     "https://res.cloudinary.com/dwul2hfvj/image/upload/v1733752126/12_sxgaxl.jpg",
   ];
 
-  // Array for blog section content
   const blogSections = [
     {
       title: "Custom Website Development",

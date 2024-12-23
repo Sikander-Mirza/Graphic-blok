@@ -78,7 +78,6 @@ const WebDevelopment = () => {
     },
   ];
 
-  // Function to handle showing more designs
   const showMoreDesigns = () => {
     setVisibleDesigns((prevVisibleDesigns) => prevVisibleDesigns + 6);
   };

@@ -36,7 +36,7 @@
 @media (max-width: 992px) {
     .testimonial-container {
         padding-bottom: 50px; /* Adjust padding if needed */
-        height: 350px; /* Adjust height for medium screens */
+        height: 400px; /* Adjust height for medium screens */
     }
 
     .carousel-item p {
@@ -63,7 +63,7 @@
     .testimonial-container {
         max-width: 90%; /* Adjust max width for small screens */
         padding-bottom: 40px; /* Adjust padding if needed */
-        height: 300px; /* Adjust height for small screens */
+        height: 350px; /* Adjust height for small screens */
     }
 
     .carousel-item p {
@@ -90,7 +90,7 @@
     .testimonial-container {
         max-width: 100%; /* Full width for extra small screens */
         padding-bottom: 30px; /* Adjust padding if needed */
-        height: 250px; /* Adjust height for extra small screens */
+        height: 300px; /* Adjust height for extra small screens */
     }
 
     .carousel-item p {

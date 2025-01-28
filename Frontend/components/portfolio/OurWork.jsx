@@ -11,7 +11,7 @@ const OurWork = () => {
   };
 
   return (
-    <div className="our-work">
+    <div className="our-work" style={{marginBottom:"2rem"}}>
       <h1>Our Work</h1>
       <img 
         src={portfolio} 

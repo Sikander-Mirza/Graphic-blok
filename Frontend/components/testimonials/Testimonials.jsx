@@ -4,9 +4,9 @@ import './Testimonials.css';
 
 const testimonials = [
     {
-        text: "Sher's Picnic Rovers Graphicblok did an outstanding job with the branding for Sher's Picnic Rovers. Their creativity and attention to detail brought our vision to life, perfectly capturing our brand's essence. The process was smooth, with excellent communication and timely revisions. Our new brand identity is vibrant and memorable, thanks to their expertise. Highly recommend Graphicblok for any branding needs!",
+        text: "Sher's Picnic Rovers Graphicblok did an outstanding job with the branding for Sher's Picnic Rovers. Their creativity and attention to detail brought our vision to life, perfectly capturing our brand's essence.",
         author: "Victoria",
-        title: "Highly Recommended!"
+        title: ""
     },
     {
         text: "I recently used Graphicblok's services and I must say, I'm thoroughly impressed.❤️👍👌",
@@ -19,7 +19,7 @@ const testimonials = [
         title: ""
     },
     {
-        text: "I had an outstanding experience working with Graphicblok. Their expertise and dedication to the project were truly impressive. They consistently delivered high-quality work on time and communicated effectively throughout the process. I appreciate their attention to detail and proactive approach to problem-solving.",
+        text: "I had an outstanding experience working with Graphicblok. Their expertise and dedication to the project were truly impressive. They consistently delivered high-quality work on time.",
         author: "Izma Khalid",
         title: ""
     },
@@ -49,7 +49,7 @@ const testimonials = [
         title: ""
     },
     {
-        text: "My journey with Graphicblok was wonderful. I created a logo for my e-commerce business, and it was a very good experience. I would highly recommend them if you want any kind of graphic services. Graphicblok is the best choice.",
+        text: "My journey with Graphicblok was wonderful. I created a logo for my e-commerce business, and it was a very good experience. I would highly recommend them if you want any kind of graphic services.",
         author: "Sunaina Shahbaz",
         title: ""
     }
@@ -57,7 +57,7 @@ const testimonials = [
 
 const Testimonials = () => {
     return (
-        <div className="testimonial-container" style={{marginTop:"6rem"}}>
+        <div className="testimonial-container" style={{marginTop:"-2.5rem"}}>
             <h2 className="text-center">Testimonials</h2>
             <hr className="mx-auto mb-4" style={{ width: '50px', border: '2px solid red' }} />
             <Carousel indicators={false}>

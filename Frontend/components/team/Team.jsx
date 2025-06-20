@@ -6,59 +6,59 @@ import { motion } from 'framer-motion';
 
 const teamMembers = [
     {
-        name: "Jane Doe",
-        title: "CEO & Founder",
-        description: "Some text that describes me lorem ipsum lorem.",
-        email: "jane@example.com",
+        name: "Munawar Sher",
+        title: "Director & Chairman",
+        description: "Leadership is not about titles, it’s about action and impact — we build futures, not just businesses.",
+        email: " contact@graphicblok.com.pk",
         image: image
     },
     {
-        name: "Mike Ross",
-        title: "Art Director",
-        description: "Some text that describes me lorem ipsum lorem.",
-        email: "mike@example.com",
+        name: "Muzaffer Sher",
+        title: "Director & Chairman",
+        description: "Success grows when we work together with trust, passion, and purpose. That’s the Graphicblok way.",
+        email: " contact@graphicblok.com.pk",
         image: image
     },
     {
-        name: "John Doe",
-        title: "Designer",
-        description: "Some text that describes me lorem ipsum lorem.",
-        email: "john@example.com",
+        name: "Mudassar Sher",
+        title: "Director & Chairman",
+        description: "Each idea is a seed — with dedication and vision, we turn it into a flourishing legacy.",
+        email: " contact@graphicblok.com.pk",
         image: image
     },
     {
-        name: "Anna Smith",
-        title: "Developer",
-        description: "Some text that describes me lorem ipsum lorem.",
-        email: "anna@example.com",
+        name: "Musharaf Sher",
+        title: "Director & Chairman",
+        description: "Consistency and commitment are the silent architects of every great achievement.",
+        email: "contact@graphicblok.com.pk",
         image: image
     },
     {
-        name: "Peter Johnson",
-        title: "Marketing Lead",
-        description: "Some text that describes me lorem ipsum lorem.",
-        email: "peter@example.com",
+        name: "Minhas Sher",
+        title: "Founder | CEO, CFO & COO",
+        description: "Graphicblok is not just a company — it’s a promise that creativity and ambition can build empires.",
+        email: "minhas@graphicblok.com.pk",
         image: image
     },
     {
-        name: "Emily Davis",
-        title: "Sales Manager",
-        description: "Some text that describes me lorem ipsum lorem.",
-        email: "emily@example.com",
+        name: "Sumaira Minhas",
+        title: "Co-Founder",
+        description: "Behind every masterpiece is a team that believes in turning imagination into reality.",
+        email: "contact@graphicblok.com.pk",
         image: image
     },
     {
-        name: "James Williams",
-        title: "HR Manager",
-        description: "Some text that describes me lorem ipsum lorem.",
-        email: "james@example.com",
+        name: "Talha Sher",
+        title: "Director",
+        description: "Innovation begins when we dare to ask: ‘What’s next?’ — and then work fearlessly to answer it.",
+        email: " contact@graphicblok.com.pk",
         image: image
     },
     {
-        name: "Laura Brown",
-        title: "Operations Head",
-        description: "Some text that describes me lorem ipsum lorem.",
-        email: "laura@example.com",
+        name: "Hamza Sher",
+        title: "Director",
+        description: "Great companies don’t just deliver services — they inspire, uplift, and redefine standards every day.",
+        email: " contact@graphicblok.com.pk",
         image: image
     }
 ];

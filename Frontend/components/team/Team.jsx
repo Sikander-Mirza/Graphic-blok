@@ -38,7 +38,7 @@ const teamMembers = [
         title: "Founder | CEO, CFO & COO",
         description: "Graphicblok is not just a company — it’s a promise that creativity and ambition can build empires.",
         email: "minhas@graphicblok.com.pk",
-        image: image
+        image: "https://res.cloudinary.com/dwul2hfvj/image/upload/v1750855971/Minhas_Sher.jpeg_xwwjzq.jpg"
     },
     {
         name: "Sumaira Minhas",
@@ -66,7 +66,20 @@ const teamMembers = [
 const Team = () => {
     return (
         <Container className="my-5">
-            <h2 className='d-flex justify-content-center'>Our Team</h2>
+<img
+  src="https://res.cloudinary.com/dwul2hfvj/image/upload/v1750855195/Minhas_Ai_Potrait_fb_cover-06_nddk15.jpg"
+  alt="Team Banner"
+  style={{
+    width: '100vw',
+    height: 'auto',
+    objectFit: 'cover',
+    display: 'block',
+    marginLeft: 'calc(-50vw + 50%)',
+    maxHeight: '450px'
+  }}
+/>
+
+            <h2 className='d-flex justify-content-center mt-5'>Our Team</h2>
             <Row>
                 
                 {teamMembers.map((member, index) => (
